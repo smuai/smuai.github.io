@@ -41,7 +41,7 @@ export default function Landing() {
                     }}
                 >
                     <Slide bottom>
-                        <p className="subtitle"><strong>SMU ARTIFICAL INTELLIGENCE CLUB hhhh</strong></p>
+                        <p className="subtitle"><strong>SMU ARTIFICAL INTELLIGENCE CLUB</strong></p>
                     </Slide>
                     <br />
                     <Fade>
