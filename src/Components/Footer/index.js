@@ -5,25 +5,18 @@ const useStyles = makeStyles({
     root: {
         // color: "#1b2a52",
         fontFamily: "Montserrat",
+        // backgroundColor: "#c2c2c2"
     }
 })
 
-export default function Footer() {
+export default function Footer(props) {
     const classes = useStyles();
     
     return (
-        <section className={classes.root}>
-            <div className="container-fluid">
-                <div className="row d-flex align-items-center">
-                    <div className="col-sm-2" />
-                        <div id="footer-nav-row" className="col-md-8 d-flex justify-content-center">
-                            <center>
-                                <h5 style={{ fontSize: "18px"}}>Copyright © 2019 SmuAI. All rights reserved.</h5>
-                            </center>
-                        </div>
-                    <div className="col-sm-2" />
-                </div>
-            </div>
+        <section className={classes.root} style={{backgroundColor: props.color}}>                
+            <center>
+                <h5 style={{ fontSize: "18px"}}>Proudly designed and developed by SmuAI.<br/>For enquiries/feedback on the website, kindly contact <a href="https://t.me/slavetojavascript" style={{textDecoration: "none", color: "black"}}>@SlaveToJavascript</a> on Telegram.</h5>
+            </center>
         </section>
     )
 }

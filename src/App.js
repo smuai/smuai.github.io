@@ -38,7 +38,7 @@ class App extends React.Component {
 
           <footer id="hero_footer">
             <div className="container">
-              <Footer/>
+              <Footer color="#c7c7c7"/>
             </div>
           </footer>
         </section>
