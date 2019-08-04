@@ -6,10 +6,11 @@ import Slide from "react-reveal/Slide";
 import Fade from 'react-reveal/Fade';
 import { makeStyles } from '@material-ui/core/styles';
 import './styles.css'
+import iie from '../../../Images/iie.png'
 
 const useStyles = makeStyles({
     root: {
-        color: "#1b2a52",
+        // color: "#1b2a52",
         fontFamily: "Montserrat",
     },
     title: {
@@ -49,16 +50,17 @@ export default function About() {
     return (
         <Container className={classes.root}>
             <Slide top>
-                <h1 className={classes.title}>ABOUT US</h1>
+                <h1 className={classes.title}>WHO WE ARE</h1>
             </Slide>
-            <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet"/>
             <img className="photoshoot" src={photoshoot} width="1000px" style={{display: "block", margin: "auto", marginTop: "50px", marginBottom: "50px"}} alt="SmuAI team 1" />
             <Container>
-                <link href="https://fonts.googleapis.com/css?family=Lato:300,700|Prata" rel="stylesheet"/>
                 <div className={classes.about}>
                     <Fade bottom>
                         <p><strong>SmuAI</strong> is a student-led ThinkTank that facilitates the sharing of ideas in the field of Artificial Intelligence.​</p>
-                        <p>This student club is supported by the Singapore Management University's Institute of Innovation and Entrepreneurship (SMU IIE).</p>
+                        <p>We are proudly supported by the Singapore Management University's Institute of Innovation and Entrepreneurship (SMU IIE).</p>
+                        <a href="https://iie.smu.edu.sg/">
+                            <img src={iie} style={{display: "block", marginLeft: "auto", marginRight: "auto"}} alt="SMU IIE"/>
+                        </a>
                     </Fade>
                 </div>
                 <Slide left>

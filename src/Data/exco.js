@@ -1,6 +1,6 @@
 export default [
 	{
-	  name: "Chin Bing Jun,  Sheldon",
+	  name: "Sheldon Chin",
 	  img: require("../Images/Sheldon.jpg"),
 	  position: "President",
 	  linkedIn: "https://www.linkedin.com/in/sheldon-chin-715951124/",
@@ -12,7 +12,7 @@ export default [
 	  linkedIn: "https://www.linkedin.com/in/lee-e-b3b19593/",
 	},
 	{
-	  name: "Low Cher Lin Charis",
+	  name: "Charis Low",
 	  img: require("../Images/Charis.png"),
 	  position: "Finance Lead",
 	  linkedIn: "https://www.linkedin.com/in/charislow/",
@@ -24,7 +24,7 @@ export default [
 	  linkedIn: "https://www.linkedin.com/in/khugiemteck/",
 	},
 	{
-	  name: "Tan Kok Wah Johnathan",
+	  name: "Johnathan Tan",
 	  img: require("../Images/Johnathan.jpg"),
 	  position: "Programmes Lead",
 	  linkedIn: "https://www.linkedin.com/in/johnathan-tan-kw/",
@@ -36,15 +36,15 @@ export default [
 	  linkedIn: "https://www.linkedin.com/in/zxx/",
 	},
 	{
-	  name: "Ang Choong Weng Jeremy",
+	  name: "Jeremy Ang",
 	  img: require("../Images/Jeremy.jpg"),
-	  position: "Programmes Lead",
+	  position: "Partnerships Lead",
 	  linkedIn: "https://www.linkedin.com/in/jeremy-ang/",
 	},
 	{
 	  name: "Haran Dorairaj",
 	  img: require("../Images/Haran.jpg"),
-	  position: "Programmes Lead",
+	  position: "Marketing Lead",
 	  linkedIn: "https://www.linkedin.com/in/harandrj/",
 	},
 ];

@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
     root: {
-        color: "#1b2a52",
+        // color: "#1b2a52",
         fontFamily: "Montserrat",
     }
 })

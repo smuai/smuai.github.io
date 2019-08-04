@@ -12,7 +12,7 @@ const useStyles = makeStyles({
         backgroundSize: "cover",
         backgroundAttachment: "fixed",
         color: "white",
-        height: "92vh",
+        height: "100vh",
     },
     hr: {
         // width: "1000px",
@@ -31,8 +31,7 @@ export default function Landing() {
     return (
         <section className={classes.root}>
             <div className="hero-body">
-                <div className="container is-fluid" 
-                    style={{
+                <div style={{
                         textAlign: "center", 
                         position: "absolute", 
                         left: "50%", 
@@ -41,14 +40,13 @@ export default function Landing() {
                     }}
                 >
                     <Slide bottom>
-                        <p className="subtitle"><strong>SMU ARTIFICAL INTELLIGENCE CLUB</strong></p>
+                        <p className="subtitle"><strong>SMU ARTIFICIAL INTELLIGENCE CLUB</strong></p>
                     </Slide>
                     <br />
                     <Fade>
                         <hr className={classes.hr} width="1000px"/>
-                        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300,700" rel="stylesheet"/>
                         <Slide top>
-                            <h2 className={classes.brainstorm}>Join the brainstorm</h2>
+                            <h2 className={classes.brainstorm}>Join the br<div style={{display: "inline", color: "aqua"}}>AI</div>nstorm</h2>
                         </Slide>
                     </Fade>
                 </div>

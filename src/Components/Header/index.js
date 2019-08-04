@@ -88,7 +88,7 @@ export default function Header() {
     );
 
     return (
-        <AppBar position="static" color="inherit" id="header">
+        <AppBar position="sticky" color="inherit" id="header" style={{position: "fixed"}}>
             <Toolbar>
                 <div style={{flexGrow: 1}} className="logo">
                     <a href="/"><img src={logo} height='50px' width='231px' alt="SmuAI Logo" style={{padding: "0px"}} /></a>
