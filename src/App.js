@@ -20,26 +20,18 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <section className="hero is-fullheight">
-          <div className="hero-head">
-            <Header/>
-          </div>
-          <div className="hero-body">
-            <div id="app-container">
-              <Switch>
-                <Route exact path="/" component={Home} />
-                <Route exact path="/people" component={People} />
-                <Route exact path="/insights" component={Insights}/>
-                <Route exact path="/events" component={Events}/>
-                <Route exact path="/contact" component={Contact}/>
-              </Switch>
-            </div>
-          </div>
+        <section>
+          <Header/>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/people" component={People} />
+            <Route exact path="/insights" component={Insights}/>
+            <Route exact path="/events" component={Events}/>
+            <Route exact path="/contact" component={Contact}/>
+          </Switch>
 
-          <footer id="hero_footer">
-            <div className="container">
-              <Footer color="#c7c7c7"/>
-            </div>
+          <footer>
+            <Footer color="#c7c7c7"/>
           </footer>
         </section>
       </Router>

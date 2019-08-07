@@ -1,0 +1,44 @@
+.what-we-do {
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+#do {
+    font-family: "Montserrat";
+    background-image: url('../../../Images/landing.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    align-content: center;
+    overflow: hidden;
+    color: white;
+    height: 110vh;
+}
+
+#do h2 {
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+#do svg {
+    stroke: white;
+    stroke-width: 8;
+    fill: none;
+    /* width: 160px; */
+    height: 200px;
+    justify-content: center
+}
+
+#dialog-icon, #research-icon, #incubate-icon {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#do p {
+    margin-top: 50px;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}

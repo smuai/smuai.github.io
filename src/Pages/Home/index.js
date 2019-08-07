@@ -2,17 +2,24 @@ import React from "react"
 import Landing from "./Landing";
 import About from "./About";
 import Do from "./Do"
+import { makeStyles } from '@material-ui/core/styles';
 
-class Home extends React.Component {
-    render() {
-        return (
-            <div className="content">
-                <Landing ref="landing"/>
-                <About ref="about"/>
-                <Do ref="do"/>
-            </div>
-        )
+const useStyles = makeStyles({
+    root: {
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed",
     }
-}
+})
 
-export default Home;
+export default function Home() {
+    const classes = useStyles();
+
+    return (
+        <div>
+            <Landing/>
+            <About/>
+            <Do/>
+        </div>
+    )
+}

@@ -1,34 +1,79 @@
-.subtitle {
-    font-size: 50px;
+#landing {
+    font-family: 'Montserrat';
+    background-image: url('../../../Images/landing.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    height: 100vh;
 }
 
-@media (max-width: 1024px){
-    hr {
-        width: 900px;
+#landing hr {
+    height: 3px;
+    background-color: white;
+}
+
+@media (min-width: 1439px) {
+    .smuai {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 1023px) {
+    .smuai {
+        font-size: 45px;
     }
 
-    .subtitle {
-        width: 1000px;
-        font-size: 45px;
+    .brainstorm {
+        font-size: 40px;
+        padding-top: 50px;
     }
 }
 
 @media (max-width: 768px){
-    .subtitle {
-        font-size: 36px;
-    }
-
     hr {
         width: 700px;
     }
 
-    .hero-body h2 {
-        font-size: 34px;
+    .smuai {
+        font-size: 35px !important;
+    }
+
+    .brainstorm {
+        font-size: 40px;
+        padding-top: 30px;
     }
 }
 
 @media (max-width: 425px) {
-    .subtitle, .hero-body h2 {
-        font-size: 21px;
+    .smuai {
+        font-size: 20px !important;
+    }
+
+    .brainstorm {
+        font-size: 25px;
+    }
+
+    hr {
+        width: 400px;
+    }
+}
+
+@media (max-width: 375px) {
+    .smuai {
+        font-size: 25px !important;
+    }
+
+    .brainstorm {
+        font-size: 28px;
+    }
+
+    hr {
+        width: 350px;
+    }
+}
+
+@media (max-width: 320px) {
+    hr {
+        width: 300px;
     }
 }
