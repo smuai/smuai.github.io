@@ -16,19 +16,19 @@ class Member extends React.Component {
     // }
 
     return (
-      <div className="member" style={{justify: "center"}}>
+      <div id="member">
         {/* {console.log(name.slice(0, name.lastIndexOf(' ')).toUpperCase() + `\n` + name.slice(name.lastIndexOf(' ')+1).toUpperCase())} */}
         <a href={linkedIn} target="_blank" rel="noopener noreferrer"><img className="avatar" src={img} alt="Avatar" /></a>
         <Grid item>
           <a href={linkedIn}>
-            <h1 
+            <h4 className="name"
               // style={{marginBottom: bottom, marginTop: top}}
             >
               {/* {name.length > 14 ? name.slice(0, name.lastIndexOf(' ')).toUpperCase() + `\r\n` + name.slice(name.lastIndexOf(' ')+1).toUpperCase() : name.toUpperCase()} */}
               {name.toUpperCase()}
-            </h1>
-          <i className="fa fa-linkedin-square" style={{fontSize: "36px"}} /></a>
-          <h3 style={{marginTop: "8px"}}>{position}</h3>
+            </h4>
+          <i className="fa fa-linkedin-square" /></a>
+          <h5 className="position">{position}</h5>
         </Grid>
       </div>
     );

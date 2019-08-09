@@ -2,8 +2,8 @@ import React from "react"
 import { makeStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
-import Grid from '@material-ui/core/Grid';
 import Slide from "react-reveal/Slide";
+import './styles.css'
 
 const images = [
     {
@@ -44,30 +44,23 @@ const images = [
 ];
 
 const useStyles = makeStyles(theme => ({
-    root: {
-        display: 'flex',
-        flexWrap: 'wrap',
-        minWidth: 300,
-        width: '100%',
-        marginTop: "80px",
-        marginLeft: "50px",
-        fontFamily: 'Montserrat',
-    },
-    title: {
-        textAlign: "center",
-        fontSize: "50px",
-        paddingTop: "100px",
-        marginBottom: "0px",
-        fontFamily: 'Montserrat',
-    },
     image: {
-        marginBottom: "100px",
+        marginBottom: "60px",
+        [theme.breakpoints.down(769)]: {
+            marginBottom: "10px",
+            height: 350,
+        },
+        [theme.breakpoints.down(426)]: {
+            height: 250,
+        },
+        [theme.breakpoints.down(376)]: {
+            height: 220,
+        },
+        [theme.breakpoints.down(376)]: {
+            height: 200,
+        },
         position: 'relative',
         height: 500,
-        [theme.breakpoints.down('xs')]: {
-            width: '100% !important', // Overrides inline-style
-            height: 150,
-        },
         '&:hover, &$focusVisible': {
             zIndex: 1,
             '& $imageBackdrop': {
@@ -78,6 +71,9 @@ const useStyles = makeStyles(theme => ({
             },
             '& $imageTitle': {
                 border: '4px solid currentColor',
+                [theme.breakpoints.down(426)]: {
+                    border: '2px solid currentColor',
+                },
             },
         },
     },
@@ -113,8 +109,20 @@ const useStyles = makeStyles(theme => ({
         transition: theme.transitions.create('opacity'),
     },
     imageTitle: {
+        textAlign: "center",
         position: 'relative',
         padding: `${theme.spacing(2)}px ${theme.spacing(4)}px ${theme.spacing(1) + 6}px`,
+        [theme.breakpoints.down(426)]: {
+            padding: `${theme.spacing(2)}px ${theme.spacing(1)}px ${theme.spacing(1) + 6}px`,
+            fontSize: "20px"
+        },
+        [theme.breakpoints.down(376)]: {
+            fontSize: "17px"
+        },
+        [theme.breakpoints.down(321)]: {
+            padding: `${theme.spacing(2)}px ${theme.spacing(1)-3}px ${theme.spacing(1) + 6}px`,
+            fontSize: "15px"
+        },
         overflow: "hidden",
         fontFamily: 'Montserrat',
     },
@@ -136,15 +144,14 @@ export default function Insights() {
     const classes = useStyles();
 
     return (
-        <div>
+        <div id="insights">
             <Slide top>
-                <h1 className={classes.title}>OUR INSIGHTS</h1>
+                <h1 className="our-insights">OUR INSIGHTS</h1>
             </Slide>
-        <div className={classes.root}>
             {images.map(image => (
-                <div>
-                    <Grid container spacing={3} className={classes.grid}>
-                        <Grid item xs={8}>
+                <div className="container justify-content-center">
+                    <div className="row justify-content-center">
+                        <div className="col-lg-8 news-imgs">
                             <ButtonBase
                                 focusRipple
                                 key={image.title}
@@ -167,7 +174,7 @@ export default function Insights() {
                                 <span className={classes.imageButton}>
                                     <Typography
                                         component="span"
-                                        variant="h4"
+                                        variant="h5"
                                         color="inherit"
                                         className={classes.imageTitle}
                                     >
@@ -176,20 +183,13 @@ export default function Insights() {
                                     </Typography>
                                 </span>
                             </ButtonBase>
-                        </Grid>
-                        <Grid item xs={3} style={{padding: "5% 10"}}>
-                            <Typography 
-                                variant="h6"
-                                component="div"
-                                style={{fontFamily: "Montserrat", padding: "15px"}}
-                            >
-                                {image.text}
-                            </Typography>
-                        </Grid>
-                    </Grid>
+                        </div>
+                        <div className="col-lg">
+                            <h5 className="desc">{image.text}</h5>
+                        </div>
+                    </div>
                 </div>
             ))}
-        </div>
         </div>
     )
 }

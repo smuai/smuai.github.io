@@ -62,27 +62,45 @@ class Do extends React.Component {
                 <Slide top>
                     <h1 className="what-we-do">WHAT WE DO</h1>
                 </Slide>
-                <Fade bottom>
+                {/* <Fade bottom> */}
                     <div style={{justifyContent: "center", textAlign: "center"}}>
                         <div class="container">
                             <div class="row justify-content-center">
-                                <div class="col-4">
-                                    <h2>DIALOG</h2>
-                                    <div class="row" id="dialog-icon"/>
-                                    <p>We facilitate panel discussions between distinguished academics and industry leaders within the AI community.</p>
+                                <div class="col-sm">
+                                    <Fade bottom>
+                                        <h2 className="subtitle">DIALOG</h2>
+                                    </Fade>
+                                    <div class="justify-content-center" id="dialog-icon"/>
+                                    <Slide bottom>
+                                        <p className="description">We facilitate panel discussions between distinguished academics and industry leaders within the AI community.</p>
+                                    </Slide>
                                 </div>
-                                <div class="col-4">
-                                    <h2>RESEARCH</h2>
+                                <div class="col-sm">
+                                    <Fade bottom>
+                                        <h2 className="subtitle">RESEARCH</h2>
+                                    </Fade>
                                     <div id="research-icon"/>
-                                    <p>We publish newsletters on trends and insights from our Dialogue sessions between industry leaders.</p>
+                                    <Slide bottom>
+                                        <p className="description">We publish newsletters on trends and insights from our dialog sessions between industry leaders.</p>
+                                    </Slide>
                                 </div>
-                                <div class="col-4">
-                                    <h2>INCUBATE</h2>
+                                <div class="col-sm">
+                                    <Fade bottom>
+                                        <h2 className="subtitle">INCUBATE</h2>
+                                    </Fade>
                                     <div id="incubate-icon"/>
-                                    <p>We work closely with SMU IIE to support entrepreneurs with Artificial Intelligence-related projects.</p>
+                                    <Slide bottom>
+                                        <p className="description">We work closely with SMU IIE to support entrepreneurs with Artificial Intelligence-related projects.</p>
+                                    </Slide>
                                 </div>
                             </div>
                         </div>
+                        <Slide left>
+                            <h3 className="where-we-are-going">WHERE WE ARE GOING</h3>
+                        </Slide>
+                        <Fade bottom>
+                            <p className="future">We seek to build Thought Leadership within the AI community in Singapore and beyond.</p>
+                        </Fade>
                     </div>
                     {/* <Grid className={classes.grid} container>
                         <Grid item xs={4} vertical>
@@ -110,7 +128,7 @@ class Do extends React.Component {
                             </Grid>
                         </Grid>
                     </Grid> */}
-                </Fade>
+                {/* </Fade> */}
             </section>
         )
     }

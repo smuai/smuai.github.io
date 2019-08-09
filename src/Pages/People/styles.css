@@ -1,0 +1,204 @@
+#people {
+    background-image: url('../../Images/landing.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    /* height: 320vh; */
+    font-family: "Montserrat";
+}
+
+.meet-our-team {
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 130px;
+    padding-bottom: 37px;
+}
+
+.executive-committee {
+    font-size: 35px;
+    margin-left: 80px;
+    padding-left: 20px;
+    border-left: 2px solid white;
+    margin-bottom: 30px;
+    overflow: hidden;
+    /* font-weight: bold; */
+}
+
+.exco-profile {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.advisors {
+    overflow: hidden;
+}
+
+#people .container {
+    padding-bottom: 80px;
+}
+
+.advisor-profile {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.advisor-profile a {
+    color: white;
+}
+.advisor-profile a:hover {
+    text-decoration: none;
+}
+
+.advisor-img {
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+
+/***************** 1024 ***************************/
+@media (max-width: 1024px) {
+    .exco-profile {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #people .container {
+        padding-bottom: 50px;
+    }
+
+    .advisor-img {
+        height: 193px;
+    }
+
+    .advisor-name {
+        font-size: 21px;
+    }
+}
+
+
+/************* 768  *******************/
+@media (max-width: 768px) {
+    .meet-our-team {
+        font-size: 30px;
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+
+    .executive-committee {
+        font-size: 24px;
+        margin-left: 0px;
+        margin-bottom: 35px;
+        text-align: center;
+        border-left: 0px;
+        border-bottom: 1px solid white;
+    }
+
+    .exco-profile {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #people .container {
+        padding-bottom: 0px;
+    }
+
+    .advisor-profile {
+        margin-bottom: 15px;
+    }
+
+    .advisor-img {
+        height: 280px;
+        border-radius: 3px;
+    }
+
+    .advisor-name {
+        font-size: 23px;
+    }
+
+    .advisor-position {
+        font-size: 19px;
+        margin-bottom: 20px;
+    }
+}
+
+
+/************* 425  *****************/
+@media (max-width: 425px) {
+    .meet-our-team {
+        font-size: 30px;
+        padding-top: 90px;
+        padding-bottom: 25px;
+    }
+
+    .executive-committee {
+        font-size: 22px;
+        margin-left: 0px;
+        margin-bottom: 25px;
+        border-left: 0px;
+        padding-left: 0px;
+        text-align: center;
+        /* font-weight: bold; */
+        text-transform: uppercase;
+        /* text-decoration: underline; */
+    }
+
+    #people .container {
+        padding-bottom: 5px;
+    }
+
+    .advisor-img {
+        height: 220px;
+    }
+
+    .advisor-name {
+        font-size: 18px;
+    }
+
+    .advisor-position {
+        font-size: 15px;
+    }
+}
+
+/******************* 375 **************/
+@media (max-width: 375px) {
+    .meet-our-team {
+        font-size: 25px;
+        padding-bottom: 20px;
+        padding-top: 80px;
+    }
+
+    .executive-committee {
+        font-size: 20px;
+    }
+
+    .advisor-img {
+        height: 200px;
+        border-radius: 2px;
+    }
+}
+
+/**************** 320 ***************/
+@media (max-width: 320px) {
+    .advisor-img {
+        height: 170px;
+        margin-bottom: 10px;
+    }
+
+    .advisor-name {
+        font-size: 15px;
+    }
+
+    .advisor-position {
+        font-size: 12px;
+    }
+
+    .advisor-profile {
+        margin-bottom: 5px;
+    }
+}

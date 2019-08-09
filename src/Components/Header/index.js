@@ -17,6 +17,7 @@ import People from '@material-ui/icons/People';
 import FlashOn from '@material-ui/icons/FlashOn';
 import Event from '@material-ui/icons/Event';
 import ContactPhone from '@material-ui/icons/ContactPhone';
+import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
 const useStyles = makeStyles({
     // root: {
@@ -25,11 +26,44 @@ const useStyles = makeStyles({
     //     fontWeight: "bold",
     // },
     list: {
-      width: 255,
+        width: 192,
+        fontFamily: "Montserrat",
+        fontSize: "15px",
     },
+    listItemText: {
+        fontFamily: "Montserrat",
+        fontSize: "15px",
+        fontWeight: "bold",
+    },
+    listItem: {
+        paddingLeft: "0px",
+    },
+    listItemIcon: {
+        color: "#1b2a52",
+    }
 });
 
-export default function Header() {
+const theme = createMuiTheme({
+    overrides: {
+      MuiToolbar: {
+        regular: {
+          minHeight: "32px",
+          '@media(max-width:768px)' : {
+            minHeight:"48px"
+          }
+        }
+      },
+      MuiListItemIcon: {
+        root: {
+          '@media(max-width:768px)' : {
+            minWidth:"35px"
+          }
+        }
+      },
+    }
+});
+
+function Header() {
     const classes = useStyles();
 
     const [state, setState] = React.useState({
@@ -53,34 +87,34 @@ export default function Header() {
             onKeyDown={toggleDrawer(side, false)}
         >
             <List>
-                <ListItem>
-                    <Button href="/">
-                        <ListItemIcon><Home /></ListItemIcon>
-                        <ListItemText primary="OVERVIEW"/>
+                <ListItem className={classes.listItem}>
+                    <Button style={{paddingLeft: "20px"}} href="/">
+                        <ListItemIcon className={classes.listItemIcon}><Home /></ListItemIcon>
+                        <ListItemText disableTypography className={classes.listItemText} primary="OVERVIEW"/>
                     </Button>
                 </ListItem>
-                <ListItem>
-                    <Button href="/people">
-                        <ListItemIcon><People /></ListItemIcon>
-                        <ListItemText primary="OUR PEOPLE"/>
+                <ListItem className={classes.listItem}>
+                    <Button style={{paddingLeft: "20px"}} href="/people">
+                        <ListItemIcon className={classes.listItemIcon}><People /></ListItemIcon>
+                        <ListItemText disableTypography className={classes.listItemText} primary="OUR PEOPLE"/>
                     </Button>
                 </ListItem>
-                <ListItem>
-                    <Button href="/insights">
-                        <ListItemIcon><FlashOn /></ListItemIcon>
-                        <ListItemText primary="OUR INSIGHTS"/>
+                <ListItem className={classes.listItem}>
+                    <Button style={{paddingLeft: "20px"}} href="/insights">
+                        <ListItemIcon className={classes.listItemIcon}><FlashOn /></ListItemIcon>
+                        <ListItemText disableTypography className={classes.listItemText} primary="OUR INSIGHTS"/>
                     </Button>
                 </ListItem>
-                <ListItem>
-                    <Button href="/events">
-                        <ListItemIcon><Event /></ListItemIcon>
-                        <ListItemText primary="OUR EVENTS"/>
+                <ListItem className={classes.listItem}>
+                    <Button style={{paddingLeft: "20px"}} href="/events">
+                        <ListItemIcon className={classes.listItemIcon}><Event /></ListItemIcon>
+                        <ListItemText disableTypography className={classes.listItemText} primary="OUR EVENTS"/>
                     </Button>
                 </ListItem>
-                <ListItem>
-                    <Button href="/contact">
-                        <ListItemIcon><ContactPhone /></ListItemIcon>
-                        <ListItemText primary="CONTACT US"/>
+                <ListItem className={classes.listItem}>
+                    <Button style={{paddingLeft: "20px"}} href="/contact">
+                        <ListItemIcon className={classes.listItemIcon}><ContactPhone /></ListItemIcon>
+                        <ListItemText disableTypography className={classes.listItemText} primary="CONTACT US"/>
                     </Button>
                 </ListItem>
             </List>
@@ -88,41 +122,45 @@ export default function Header() {
     );
 
     return (
-        <AppBar position="sticky" color="inherit" id="header" style={{position: "fixed"}}>
-            <Toolbar>
-                <div style={{flexGrow: 1}} className="logo">
-                    <a href="/"><img src={logo} height='50px' width='231px' alt="SmuAI Logo" style={{padding: "0px"}} /></a>
-                </div>
+        <MuiThemeProvider theme={theme}>
+            <AppBar position="sticky" color="inherit" id="header" style={{position: "fixed"}}>
+                <Toolbar className="toolbar">
+                    <div style={{flexGrow: 1}}>
+                        <a href="/"><img src={logo} alt="SmuAI Logo" className="logo"/></a>
+                    </div>
 
-                <div className="navbar-buttons">
-                    <Button color="inherit" href='/' size="large" className="button">Overview</Button>
-                    <Button color="inherit" href="/people" size="large">Our People</Button>
-                    <Button color="inherit" href="/insights" size="large">Our Insights</Button>
-                    <Button color="inherit" href="/events" size="large">Our Events</Button>
-                    <Button color="inherit" href="/contact" size="large">Contact Us</Button>
-                    <SwipeableDrawer
-                        open={state.left}
-                        onClose={toggleDrawer('left', false)}
-                        onOpen={toggleDrawer('left', true)}
-                    >
-                        {sideList('left')}
-                    </SwipeableDrawer>
-                    <SwipeableDrawer
-                        anchor="right"
-                        open={state.right}
-                        onClose={toggleDrawer('right', false)}
-                        onOpen={toggleDrawer('right', true)}
-                    >
-                        {sideList('right')}
-                    </SwipeableDrawer>
-                </div>
+                    <div className="navbar-buttons">
+                        <Button disableRipple color="inherit" href='/' size="large" className="button">Overview</Button>
+                        <Button disableRipple color="inherit" href="/people" size="large">Our People</Button>
+                        <Button disableRipple color="inherit" href="/insights" size="large">Our Insights</Button>
+                        <Button disableRipple color="inherit" href="/events" size="large">Our Events</Button>
+                        <Button disableRipple color="inherit" href="/contact" size="large">Contact Us</Button>
+                        <SwipeableDrawer
+                            open={state.left}
+                            onClose={toggleDrawer('left', false)}
+                            onOpen={toggleDrawer('left', true)}
+                        >
+                            {sideList('left')}
+                        </SwipeableDrawer>
+                        <SwipeableDrawer
+                            anchor="right"
+                            open={state.right}
+                            onClose={toggleDrawer('right', false)}
+                            onOpen={toggleDrawer('right', true)}
+                        >
+                            {sideList('right')}
+                        </SwipeableDrawer>
+                    </div>
 
-                <div className="burger">
-                    <IconButton edge="end" color="inherit" aria-label="menu" onClick={toggleDrawer('right', true)}>
-                        <MenuIcon />
-                    </IconButton>
-                </div>
-            </Toolbar>
-        </AppBar>
+                    <div className="burger">
+                        <IconButton edge="end" color="inherit" aria-label="menu" onClick={toggleDrawer('right', true)}>
+                            <MenuIcon />
+                        </IconButton>
+                    </div>
+                </Toolbar>
+            </AppBar>
+        </MuiThemeProvider>
     )
 }
+
+export default Header;

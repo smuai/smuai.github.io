@@ -2,6 +2,8 @@ import React from "react"
 // import "react-image-gallery/styles/css/image-gallery.css";
 // import ImageGallery from 'react-image-gallery';
 import event1 from '../../Images/event1.jpg'
+import './styles.css'
+import { ImageGroup, Image } from 'react-fullscreen-image'
 
 export default function Events () {
     // const prefix_url = "http://localhost:3001";
@@ -14,10 +16,39 @@ export default function Events () {
     //     },
     // ]
 
+    const images = [
+        'https://i.imgur.com/jyalweJ.jpg',
+    ]
+
     return (
-        <div>
+        <section id="events">
+            <h1 className="our-events">OUR EVENTS</h1>
             {/* <ImageGallery items={images}/> */}
-            <img src={event1} height="700px" style={{display: "block", margin: "auto", paddingTop: "80px"}} alt="Event 1"/>
-        </div>
+            <img src={event1} className="poster" alt="Event 1"/>
+
+            {/* <ImageGroup style={{height: "auto", width: "500px"}}>
+                <ul className="images">
+                    {images.map(i => (
+                    <li key={i}>
+                        <Image
+                            src={i}
+                            alt="nature"
+                            height="100vh"
+                            style={{
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                right: 0,
+                                bottom: 0,
+                                height: '100%',
+                                width: '100%',
+                                // objectFit: 'cover',
+                            }}
+                        />
+                    </li>
+                    ))}
+                </ul>
+            </ImageGroup> */}
+        </section>
     )
 }

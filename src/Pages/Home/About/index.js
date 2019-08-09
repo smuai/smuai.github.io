@@ -13,7 +13,7 @@ export default function About() {
             <Slide top>
                 <h1 className="who-we-are">WHO WE ARE</h1>
             </Slide>
-            <img className="photoshoot" src={photoshoot} width="1000px" alt="SmuAI team 1" />
+            <img className="photoshoot1" src={photoshoot} alt="SmuAI team 1" />
             <Container>
                 <div className="about">
                     <Fade bottom>
@@ -30,7 +30,7 @@ export default function About() {
                 <div className="ourmission">
                     <Fade bottom>
                         <p className="mission">To cultivate and spread ideas about Artificial Intelligence.</p>
-                        <img className="photoshoot" src={photoshoot2} width="1000px" alt="SmuAI team 2" />
+                        <img className="photoshoot2" src={photoshoot2} alt="SmuAI team 2" />
                     </Fade>
                 </div>
             </Container>

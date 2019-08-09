@@ -1,5 +1,40 @@
-#footer h5 {
+.footer-text {
     margin-bottom: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#footer {
+    font-family: "Montserrat";
+}
+
+@media (max-width: 1024px) {
+    .footer-text {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-text {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 425px) {
+    .footer-text {
+        font-size: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 320px) {
+    .footer-text {
+        font-size: 8px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
 }

@@ -1,156 +1,104 @@
 import React from "react"
 import Container from '@material-ui/core/Container';
 import Slide from "react-reveal/Slide";
-import Grid from '@material-ui/core/Grid';
 import Fade from "react-reveal/Fade";
 import bio from '../../Data/exco'
 import Member from '../../Components/Member'
-import Paper from '@material-ui/core/Paper';
-import { makeStyles } from '@material-ui/core/styles';
-import background from '../../Images/landing.jpg'
+import './styles.css'
 
-const useStyles = makeStyles(() => ({
-    root: {
-        backgroundImage: `url(${background})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundAttachment: "fixed",
-        color: "white",
-        height: "320vh",
-        fontFamily: 'Montserrat',
+const advisors = [
+    {
+        name: "ZHENG ZHICHAO DANIEL",
+        position1: "Assistant Professor",
+        position2: "Operations Management",
+        image: 'https://staffphoto.smu.edu.sg/s/danielzheng/600x400',
+        link: 'https://www.smu.edu.sg/faculty/profile/84243/ZHENG-Zhichao-Daniel',
+        row: 1,
     },
-    title: {
-        textAlign: "center",
-        fontSize: "50px",
-        paddingTop: "100px",
-        marginBottom: "70px",
+    {
+        name: 'GOH YIHAN',
+        position1: 'Associate Professor of Law',
+        position2: 'Director, Center for AI and Data Governance',
+        image: "https://staffphoto.smu.edu.sg/s/yihangoh/600x400",
+        link: "https://www.smu.edu.sg/faculty/profile/108226/GOH-Yihan",
+        row: 1,
     },
-    subtitle: {
-        fontSize: "35px",
-        // font-weight: bold,
-        marginLeft: "80px",
-        paddingLeft: "20px",
-        paddingRight: "25px",
-        borderLeft: "2px solid white",
-        marginBottom: "50px",
+    {
+        name: 'SWAPNA GOTTIPATI',
+        position1: 'Programme Director,',
+        position2: 'BSc (IS) Information Systems Major',
+        image: 'https://staffphoto.smu.edu.sg/s/swapnag/600x400',
+        link: "https://www.smu.edu.sg/faculty/profile/105401/Swapna-GOTTIPATI",
+        row: 1,
     },
-    exco: {
-        textAlign: "center",
-        overflow: "hidden",
-        marginBottom: "30px",
+    {
+        name: 'DAI BING TIAN',
+        position1: 'Director,',
+        position2: 'MITB (AI) Programme',
+        image: 'https://sis.smu.edu.sg/sites/sis.smu.edu.sg/files/sis/programmes/MITB/images/new-site-2018/faculty/full/faculty-pic-dai-bing-tian.jpg',
+        link: "https://www.smu.edu.sg/faculty/profile/146776/DAI-Bing-Tian",
+        row: 2,
     },
-    advisors: {
-        overflow: "hidden",
-    }
-}))
+    {
+        name: 'JOHNATHAN PAN',
+        position1: 'Director, Ministry of Home Affairs',
+        position2: '(Robotics, Cybersecurity, Applied AI)',
+        image: 'https://i1.rgstatic.net/ii/profile.image/788036329680902-1564893910210_Q512/Jonathan_Pan4.jpg',
+        link: "https://www.linkedin.com/in/dr-jonathan-pan-b6590491/",
+        row: 2,
+    },
+]
 
 export default function People() {
-    const classes = useStyles();
     
     return (
-        <div className={classes.root}>
+        <div id="people">
             <Slide top>
-                <h1 className={classes.title}>MEET OUR TEAM</h1>
+                <h1 className="meet-our-team">MEET OUR TEAM</h1>
             </Slide>
             <Container>
                 <Slide left>
-                    <p className={classes.subtitle}>Executive Committee</p>
+                    <p className="executive-committee">Executive Committee</p>
                 </Slide>
 
-                <Grid container style={{marginBottom: "100px"}}>
-                    {bio.map(profile => {
-                        return (
-                            <Grid container xs={3} justify="center" key={profile.key} className={classes.exco}>
-                                <Fade bottom>
-                                    <Member member={profile} />
-                                </Fade>
-                            </Grid>
-                        );
-                    })}
-                </Grid>
+                <div className="container">
+                    <div class="row justify-content-center">
+                        {bio.map(profile => {
+                            return (
+                                <div className="col-sm exco-profile">
+                                    <Fade bottom>
+                                        <Member member={profile} />
+                                    </Fade>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
 
                 <Slide left>
-                    <p className={classes.subtitle}>Advisors</p>
+                    <p className="executive-committee">Advisors</p>
                 </Slide>
                 
-                <div className={classes.advisors}>
+                <div className="advisors">
                     <Fade bottom>
-                        <Grid container spacing={3} style={{textAlign: "center", marginBottom: "10px"}}>
-                            <Grid item xs>
-                                <Paper>
-                                    <a href="https://www.smu.edu.sg/faculty/profile/84243/ZHENG-Zhichao-Daniel" 
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        style={{textDecoration: "none", color: "black"}}
-                                    >
-                                        <img src={require('../../Images/danielzheng.jpg')} width="400px" alt="Zheng Zhichao Daniel"/>
-                                        <h2>ZHENG ZHICHAO DANIEL</h2>
-                                        <h3>Assistant Professor<br/>Operations Management</h3>
-                                        <br/>
-                                    </a>
-                                </Paper>
-                            </Grid>
-                            <Grid item xs>
-                                <Paper>
-                                    <a href="https://www.smu.edu.sg/faculty/profile/108226/GOH-Yihan" 
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        style={{textDecoration: "none", color: "black"}}
-                                    >
-                                        <img src={require('../../Images/yihangoh.jpg')} width="400px" alt="Goh Yihan"/>
-                                        <h2>GOH YIHAN</h2>
-                                        <h3>Associate Professor of Law<br/>Director, Center for AI and Data Governance</h3>
-                                    </a>
-                                </Paper>
-                            </Grid>
-                            <Grid item xs>
-                                <Paper>
-                                    <a href="https://www.smu.edu.sg/faculty/profile/105401/Swapna-GOTTIPATI" 
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        style={{textDecoration: "none", color: "black"}}
-                                    >
-                                        <img src={require('../../Images/swapna.jpg')} width="400px" alt="Goh Yihan"/>
-                                        <h2>SWAPNA GOTTIPATI</h2>
-                                        <h3>Programme Director,<br/>BSc (IS) Information Systems Major</h3>
-                                        <br/>
-                                    </a>
-                                </Paper>
-                            </Grid>
-                        </Grid>
-
-                        <Grid container spacing={10} style={{textAlign: "center"}}>
-                            <Grid item xs={2}/>
-                            <Grid item xs>
-                                <Paper>
-                                    <a href="https://www.smu.edu.sg/faculty/profile/146776/DAI-Bing-Tian" 
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        style={{textDecoration: "none", color: "black"}}
-                                    >
-                                        <img src={require('../../Images/daibingtian.jpg')} width="352px" alt="Dai Bingtian"/>
-                                        <h2>DAI BING TIAN</h2>
-                                        <h3>Director,<br/>MITB (Artificial Intelligence)<br/>Programme</h3>
-                                        <br/>
-                                    </a>
-                                </Paper>
-                            </Grid>
-                            <Grid item xs>
-                                <Paper>
-                                    <a href="https://www.linkedin.com/in/dr-jonathan-pan-b6590491/" 
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        style={{textDecoration: "none", color: "black"}}
-                                    >
-                                        <img src={require('../../Images/jonathanpan.jpg')} width="352px" alt="Jonathan Pan"/>
-                                        <h2>JOHNATHAN PAN</h2>
-                                        <h3>Director, Ministry of Home Affairs<br/>(Robotics, Cybersecurity, <br/>Applied AI)</h3>
-                                        <br/>
-                                    </a>
-                                </Paper>
-                            </Grid>
-                            <Grid item xs={2}/>
-                        </Grid>
+                        <div className="container">
+                            <div className="row justify-content-center">
+                                {advisors.map(advisor => {
+                                    return (
+                                        <div className="col-lg advisor-profile">
+                                            <a href={advisor.link}>
+                                                <Fade bottom>
+                                                    <img className="advisor-img" src={advisor.image} alt={advisor.name} height="233px" />
+                                                    <h4 className="advisor-name"><strong>{advisor.name}</strong></h4>
+                                                    {/* <br/> */}
+                                                    <h5 className="advisor-position">{advisor.position1}<br/>{advisor.position2}</h5>
+                                                </Fade>
+                                            </a>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+                        </div>
                     </Fade>
                 </div>
             </Container>

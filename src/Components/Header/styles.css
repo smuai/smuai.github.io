@@ -4,6 +4,12 @@
     font-weight: bold;
 }
 
+.logo {
+    height: 50px;
+    width: auto;
+    margin-left: 15px;
+}
+
 @media (max-width: 1024px){
     #header span {
         font-size: 15px;
@@ -13,11 +19,28 @@
         padding-left: 30px;
         padding-right: 0px;
     }
+
+    .logo {
+        height: 45px;
+        margin-left: 0px;
+    }
 }
 
 @media (max-width: 768px) {
     .navbar-buttons {
         display: none;
+    }
+
+    #header {
+        height: 48px;
+    }
+
+    .logo {
+        height: 30px;
+    }
+
+    .toolbar {
+        min-height: 48px;
     }
 }
 

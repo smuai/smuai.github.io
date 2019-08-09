@@ -1,0 +1,256 @@
+#contact {
+    font-family: "Montserrat";
+
+}
+
+.contact-us {
+    text-align: center;
+    font-size: 45px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.iie {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.address {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#contact .col-lg {
+    text-align: center;
+    
+}
+
+#contact_map {
+    height: 400px;
+    width: 400px;
+    position: relative;
+}
+
+.smu {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#contact .subtitle {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.material-icons, .fa-phone {
+    font-size: 30px;
+    color: #1b2a52;
+}
+
+#contact a {
+    text-decoration: none;
+    color: black;
+}
+
+.contact-us-names {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.social-icon {
+    height: 50px;
+    width: auto;
+    margin-bottom: 13px;
+    margin-top: 10px;
+}
+
+.social-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bottom-row {
+    margin-bottom: 100px;
+}
+
+.top-row {
+    margin-bottom: 90px;
+}
+
+
+@media (max-width: 1024px) {
+    .contact-us {
+        font-size: 35px;
+        margin-top: 100px;
+        margin-bottom: 40px;
+    }
+
+    .top-row {
+        margin-bottom: 70px;
+    }
+
+    #contact .subtitle {
+        font-size: 25px;
+    }
+
+    .social-name {
+        font-size: 15px;
+    }
+
+    .smu {
+        width: 65px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .contact-us {
+        font-size: 30px;
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+
+    #contact_map {
+        margin-bottom: 40px;
+    }
+
+    .contact-section, .social-section {
+        margin-bottom: 50px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .contact-us {
+        font-size: 28px;
+        margin-top: 75px;
+        margin-bottom: 20px;
+    }
+
+    #contact_map {
+        width: 395px;
+    }
+
+    .smu {
+        width: 60px;
+        margin-bottom: 10px;
+    }
+
+    .iie {
+        font-size: 17px;
+    }
+
+    .address p {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .top-row {
+        margin-bottom: 50px;
+    }
+
+    #contact .subtitle {
+        font-size: 22px;
+    }
+
+    .material-icons, .fa-phone {
+        font-size: 25px;
+    }
+
+    .contact-us-names {
+        font-size: 16px;
+    }
+
+    .social-name {
+        font-size: 18px;
+    }
+
+    .top-row {
+        margin-bottom: 30px;
+    }
+
+    .bottom-row {
+        margin-bottom: 0px;
+    }
+
+    #contact_map {
+        margin-bottom: 30px;
+    }
+
+    .contact-section, .social-section {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .contact-us {
+        font-size: 25px;
+        margin-top: 70px;
+    }
+
+    #contact_map {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .iie {
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+
+    .address p {
+        margin-bottom: 0px;
+        font-size: 13px;
+    }
+
+    #contact .subtitle {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .social-name {
+        font-size: 15px;
+    }
+
+    .smu {
+        width: 50px;
+    }
+
+    .social-icon {
+        height: 45px;
+    }
+}
+
+@media (max-width: 320px) {
+    .contact-us {
+        font-size: 23px;
+        margin-bottom: 15px;
+    }
+    .smu {
+        width: 40px
+    }
+
+    #contact .subtitle {
+        font-size: 18px;
+    }
+
+    .contact-us-names {
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+
+    .contact-section, .social-section {
+        margin-bottom: 20px;
+    }
+
+    .social-icon {
+        margin-bottom: 8px;
+        height: 40px;
+    }
+
+    .social-name {
+        margin-bottom: 6px;
+    }
+}

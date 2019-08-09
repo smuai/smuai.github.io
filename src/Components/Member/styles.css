@@ -1,9 +1,77 @@
-.avatar {
-    height: 150px;
-    border-radius: 50%;
+#member {
+    text-align: center;
 }
 
-.member a {
+.avatar {
+    height: 180px;
+    width: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+#member a {
     text-decoration: none;
     color: white
+}
+
+.name {
+    font-weight: bold;
+}
+
+.position {
+    padding-top: 5px;
+    margin-bottom: 50px;
+}
+
+.fa-linkedin-square {
+    font-size: 36px;
+}
+
+@media (max-width: 1024px) {
+    .name {
+        font-size: 21px;
+    }
+
+    .avatar {
+        height: 153px;
+    }
+}
+
+@media (max-width: 768px) {
+    .avatar {
+        height: 130px;
+    }
+    
+    .name {
+        font-size: 17px;
+    }
+
+    .position {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 425px) {
+    .avatar {
+        height: 150px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+
+    .position {
+        font-size: 18px;
+        margin-bottom: 33px;
+    }
+
+    .fa-linkedin-square {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .avatar {
+        height: 130px;
+    }
 }
