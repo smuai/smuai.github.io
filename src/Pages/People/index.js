@@ -17,7 +17,7 @@ const advisors = [
     },
     {
         name: 'GOH YIHAN',
-        position1: 'Associate Professor of Law',
+        position1: 'Professor of Law',
         position2: 'Director, Center for AI and Data Governance',
         image: "https://staffphoto.smu.edu.sg/s/yihangoh/600x400",
         link: "https://www.smu.edu.sg/faculty/profile/108226/GOH-Yihan",
