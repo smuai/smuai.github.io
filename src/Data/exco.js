@@ -18,12 +18,6 @@ export default [
 	  linkedIn: "https://www.linkedin.com/in/charislow/",
 	},
 	{
-	  name: "Khu Giem Teck",
-	  img: require("../Images/Giemteck.jpg"),
-	  position: "Programmes Lead",
-	  linkedIn: "https://www.linkedin.com/in/khugiemteck/",
-	},
-	{
 	  name: "Johnathan Tan",
 	  img: require("../Images/Johnathan.jpg"),
 	  position: "Programmes Lead",

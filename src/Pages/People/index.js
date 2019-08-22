@@ -8,12 +8,12 @@ import './styles.css'
 
 const advisors = [
     {
-        name: "ZHENG ZHICHAO DANIEL",
-        position1: "Assistant Professor",
-        position2: "Operations Management",
-        image: 'https://staffphoto.smu.edu.sg/s/danielzheng/600x400',
-        link: 'https://www.smu.edu.sg/faculty/profile/84243/ZHENG-Zhichao-Daniel',
-        row: 1,
+        name: 'STEVEN MILLER',
+        position1: 'Vice Provost (Research)',
+        position2: 'Professor of Information Systems',
+        image: "https://staffphoto.smu.edu.sg/s/stevenmiller/600x400",
+        link: "https://www.smu.edu.sg/faculty/profile/9631/Steven-MILLER",
+        size: "big",
     },
     {
         name: 'GOH YIHAN',
@@ -21,15 +21,7 @@ const advisors = [
         position2: 'Director, Center for AI and Data Governance',
         image: "https://staffphoto.smu.edu.sg/s/yihangoh/600x400",
         link: "https://www.smu.edu.sg/faculty/profile/108226/GOH-Yihan",
-        row: 1,
-    },
-    {
-        name: 'SWAPNA GOTTIPATI',
-        position1: 'Programme Director,',
-        position2: 'BSc (IS) Information Systems Major',
-        image: 'https://staffphoto.smu.edu.sg/s/swapnag/600x400',
-        link: "https://www.smu.edu.sg/faculty/profile/105401/Swapna-GOTTIPATI",
-        row: 1,
+        size: "big",
     },
     {
         name: 'DAI BING TIAN',
@@ -37,7 +29,7 @@ const advisors = [
         position2: 'MITB (AI) Programme',
         image: 'https://sis.smu.edu.sg/sites/sis.smu.edu.sg/files/sis/programmes/MITB/images/new-site-2018/faculty/full/faculty-pic-dai-bing-tian.jpg',
         link: "https://www.smu.edu.sg/faculty/profile/146776/DAI-Bing-Tian",
-        row: 2,
+        size: "small",
     },
     {
         name: 'JOHNATHAN PAN',
@@ -45,7 +37,23 @@ const advisors = [
         position2: '(Robotics, Cybersecurity, Applied AI)',
         image: 'https://i1.rgstatic.net/ii/profile.image/788036329680902-1564893910210_Q512/Jonathan_Pan4.jpg',
         link: "https://www.linkedin.com/in/dr-jonathan-pan-b6590491/",
-        row: 2,
+        size: "small",
+    },
+    {
+        name: 'SWAPNA GOTTIPATI',
+        position1: 'Programme Director,',
+        position2: 'BSc (IS) Information Systems Major',
+        image: 'https://staffphoto.smu.edu.sg/s/swapnag/600x400',
+        link: "https://www.smu.edu.sg/faculty/profile/105401/Swapna-GOTTIPATI",
+        size: "big",
+    },
+    {
+        name: "ZHENG ZHICHAO DANIEL",
+        position1: "Assistant Professor",
+        position2: "Operations Management",
+        image: 'https://staffphoto.smu.edu.sg/s/danielzheng/600x400',
+        link: 'https://www.smu.edu.sg/faculty/profile/84243/ZHENG-Zhichao-Daniel',
+        size: "big",
     },
 ]
 
@@ -85,16 +93,18 @@ export default function People() {
                             <div className="row justify-content-center">
                                 {advisors.map(advisor => {
                                     return (
-                                        <div className="col-lg advisor-profile">
-                                            <a href={advisor.link}>
-                                                <Fade bottom>
-                                                    <img className="advisor-img" src={advisor.image} alt={advisor.name} height="233px" />
-                                                    <h4 className="advisor-name"><strong>{advisor.name}</strong></h4>
-                                                    {/* <br/> */}
-                                                    <h5 className="advisor-position">{advisor.position1}<br/>{advisor.position2}</h5>
-                                                </Fade>
-                                            </a>
-                                        </div>
+                                        // <div>
+                                            <div className={advisor.name=="JOHNATHAN PAN"||advisor.name=="DAI BING TIAN" ? "col-lg-6 col-sm text-center advisor-profile" : 'col-lg advisor-profile'}>
+                                                <a href={advisor.link}>
+                                                    <Fade bottom>
+                                                        <img className="advisor-img" src={advisor.image} alt={advisor.name} height={advisor.size=="big" ? "300px" : "200px"} />
+                                                        <h4 className="advisor-name"><strong>{advisor.name}</strong></h4>
+                                                        {/* <br/> */}
+                                                        <h5 className="advisor-position">{advisor.position1}<br/>{advisor.position2}</h5>
+                                                    </Fade>
+                                                </a>
+                                            </div>
+                                        // </div>
                                     );
                                 })}
                             </div>
