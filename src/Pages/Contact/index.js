@@ -113,17 +113,17 @@ export default function Contact() {
                                     </a>
                                 </div>
                                 <div className="col-sm socials">
-                                    <a href="https://www.linkedin.com/company/smu-artificial-intelligence/">
-                                        <img src={linkedin} alt="LinkedIn" className="social-icon"/>
-                                        <br/>
-                                        <p className="social-name">SMU Artificial Intelligence Club</p>
-                                    </a>
-                                </div>
-                                <div className="col-sm socials">
                                     <a href="https://t.me/SmuAI" className={classes.a}>
                                         <img src={telegram} alt="Telegram" className="social-icon"/>
                                         <br/>
                                         <p className="social-name">SmuAI News</p>
+                                    </a>
+                                </div>
+                                <div className="col-sm socials">
+                                    <a href="https://www.linkedin.com/company/smu-artificial-intelligence/">
+                                        <img src={linkedin} alt="LinkedIn" className="social-icon"/>
+                                        <br/>
+                                        <p className="social-name">SMU Artificial Intelligence Club</p>
                                     </a>
                                 </div>
                             </div>
