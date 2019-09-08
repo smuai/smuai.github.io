@@ -5,6 +5,15 @@ import Typography from '@material-ui/core/Typography';
 import Slide from "react-reveal/Slide";
 import './styles.css'
 
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+
+import panel1 from '../../Images/panel1.png'
+
 const images = [
     {
         url: 'https://gettechss.com/wp-content/uploads/2019/05/Yuval-Noah-Harari-and-Fei-Fei-Li-on-Artificial-Intelligence.jpg',
@@ -138,6 +147,12 @@ const useStyles = makeStyles(theme => ({
     grid: {
         flexGrow: 1,
     },
+    card: {
+        maxWidth: 500,
+    },
+        media: {
+        height: 350,
+    },
 }));
 
 export default function Insights() {
@@ -148,6 +163,39 @@ export default function Insights() {
             <Slide top>
                 <h1 className="our-insights">OUR INSIGHTS</h1>
             </Slide>
+
+            <div className="container justify-content-center">
+                <div className="row justify-content-center">
+                    <Card className={classes.card}>
+                        <CardActionArea>
+                            <CardMedia
+                            className={classes.media}
+                            image={panel1}
+                            title="Unlocking Value of AI in Organisations"
+                            />
+                            <CardContent>
+                            <Typography gutterBottom variant="h5" component="h2">
+                                Unlocking Value of AI in Organisations
+                            </Typography>
+                            <Typography variant="body2" color="textSecondary" component="p">
+                                In our very first insights article, we would be exploring:<br/>
+                                What is Intelligence really? <br/>
+                                How understanding business context is key to creating relevant AI solutions<br/>
+                                The hidden pains of using OCR <br/>
+                                How AI initiatives must be driven by a multidisciplinary team
+                            </Typography>
+                            </CardContent>
+                        </CardActionArea>
+                        <CardActions style={{justifyContent: "center"}}>
+                            <Button size="small" color="primary" href="https://medium.com/@smuaiclub/unlocking-value-of-ai-in-organisations-2e19e88ee9df" target="_blank">
+                                VIEW
+                            </Button>
+                        </CardActions>
+                    </Card>
+                </div>
+                <br/><br/><br/>
+            </div>
+
             {images.map(image => (
                 <div className="container justify-content-center">
                     <div className="row justify-content-center">

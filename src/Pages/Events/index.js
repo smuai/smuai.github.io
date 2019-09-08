@@ -1,7 +1,7 @@
 import React from "react"
 // import "react-image-gallery/styles/css/image-gallery.css";
 // import ImageGallery from 'react-image-gallery';
-import event1 from '../../Images/event1.jpg'
+import event from '../../Images/event2.png'
 import './styles.css'
 import { ImageGroup, Image } from 'react-fullscreen-image'
 
@@ -24,7 +24,7 @@ export default function Events () {
         <section id="events">
             <h1 className="our-events">OUR EVENTS</h1>
             {/* <ImageGallery items={images}/> */}
-            <img src={event1} className="poster" alt="Event 1"/>
+            <a href="http://tiny.cc/tjplbz" target="_blank" rel="noopener noreferrer"><img src={event} className="poster" alt="Event 1"/></a>
 
             {/* <ImageGroup style={{height: "auto", width: "500px"}}>
                 <ul className="images">
