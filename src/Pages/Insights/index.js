@@ -11,9 +11,7 @@ const images = [
         title: "Unlocking Value of AI in Organisations",
         width: '100%',
         link: "https://medium.com/@smuaiclub/unlocking-value-of-ai-in-organisations-2e19e88ee9df",
-        text: `In our very first insights article, we would be exploring:
-        <p>What is Intelligence really?</p>
-        How understanding business context is key to creating relevant AI solutions The Hidden pains of using OCR How AI initiatives must be driven by a multidisciplinary team.`
+        text: `What is Intelligence really? How is the understanding of business context key to creating relevant AI solutions? What are the hidden pains of using OCR? How must AI initiatives be driven by a multidisciplinary team? In our very first insights article, these are the topics we would be exploring.`
     },
     {
         url: 'https://gettechss.com/wp-content/uploads/2019/05/Yuval-Noah-Harari-and-Fei-Fei-Li-on-Artificial-Intelligence.jpg',
