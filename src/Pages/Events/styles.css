@@ -1,4 +1,4 @@
-#events {
+/* #events {
     font-family: "Montserrat";
 }
 
@@ -69,4 +69,17 @@
         height: 440px;
         margin-bottom: 93px;
     }
+} */
+
+#carouselExampleIndicators {
+    margin-top: 90px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    width: 25vw;
+    justify-content: center;
+    text-align: center;
+}
+
+#gallery {
+    margin-top: 90px;
 }

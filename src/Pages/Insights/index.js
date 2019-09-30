@@ -14,7 +14,7 @@ const images = [
         text: `What is Intelligence really? How is the understanding of business context key to creating relevant AI solutions? What are the hidden pains of using OCR? How must AI initiatives be driven by a multidisciplinary team? In our very first insights article, these are the topics we would be exploring.`
     },
     {
-        url: 'https://gettechss.com/wp-content/uploads/2019/05/Yuval-Noah-Harari-and-Fei-Fei-Li-on-Artificial-Intelligence.jpg',
+        url: 'https://i.ytimg.com/vi/b9TfkgH0Xzw/maxresdefault.jpg',
         title: 'Yuval Noah Harari & Fei-Fei Li on AI',
         width: '100%',
         link: 'https://towardsdatascience.com/yuval-noah-harari-and-fei-fei-li-on-ai-90d9a8686cc5',

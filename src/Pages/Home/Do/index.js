@@ -68,7 +68,7 @@ class Do extends React.Component {
                             <div class="row justify-content-center">
                                 <div class="col-sm">
                                     <Fade bottom>
-                                        <h2 className="subtitle">DIALOG</h2>
+                                        <h2 className="subtitle">DIALOGUE</h2>
                                     </Fade>
                                     <div class="justify-content-center" id="dialog-icon"/>
                                     <Slide bottom>
