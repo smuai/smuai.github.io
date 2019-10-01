@@ -80,6 +80,14 @@
     text-align: center;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(50%);
+    /* outline: black;
+    border-radius: 100%;
+    border: 1px solid black; */
+}
+
 #gallery {
     margin-top: 90px;
 }
