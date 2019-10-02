@@ -7,6 +7,13 @@ import './styles.css'
 
 const images = [
     {
+        url: 'https://miro.medium.com/max/2000/1*TjuiH3m704jCghlpiwQpwA.jpeg',
+        title: 'Building Trust in AI through Transparency and Governance',
+        width: '100%',
+        link: 'https://medium.com/@smuaiclub/building-trust-in-ai-through-transparency-and-governance-58872d06fdcc',
+        text: "Our second edition explores the Emergence of XAI (Explainable AI); how Biases and Unfairness can be mitigated when building AI Models; how Current Governance Frameworks seeks to build trust and transparency; and the market gaps in ensuring Fair and Transparent AI.",
+    },
+    {
         url: "https://miro.medium.com/max/5200/0*m2Uos8jT8k3D_7-c.png",
         title: "Unlocking Value of AI in Organisations",
         width: '100%',
