@@ -91,3 +91,20 @@
 #gallery {
     margin-top: 90px;
 }
+
+.timeline-title {
+    font-family: Montserrat;
+    font-weight: bold;
+    text-align: center;
+    font-size: 45px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+#events{
+    font-family: Montserrat;
+}
+
+.vertical-timeline-element--work {
+    font-weight: bold;
+}

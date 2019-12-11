@@ -3,6 +3,18 @@ import './styles.css'
 // import Carousel, { Modal, ModalGateway } from 'react-images';
 import { render } from 'react-dom';
 import Gallery from 'react-grid-gallery';
+import Slide from "react-reveal/Slide";
+
+//timeline
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import 'react-vertical-timeline-component/style.min.css';
+
+//icons
+import { FaComments } from 'react-icons/fa';
+import { FaBusinessTime } from 'react-icons/fa';
+import { FaInfo } from 'react-icons/fa';
+import { FaLandmark } from 'react-icons/fa';
+import { FaCalendarAlt } from 'react-icons/fa';
 
 const carousel = [
     {
@@ -111,7 +123,82 @@ export default class Home extends React.Component {
         // const { selectedIndex, lightboxIsOpen } = this.state;
 
         return (
+            <div id="events">
             <div className="container">
+                <Slide top>
+                    <h1 className="timeline-title">TIMELINE OF EVENTS</h1>
+                </Slide>
+                
+                <div className="timeline" style={{backgroundColor:"rgb(227, 227, 227)"}}>
+                <VerticalTimeline>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={{ background: 'rgb(181, 222, 255)', color: '#000000' }} //speech bubble background color + text color
+                        contentArrowStyle={{ borderRight: '7px solid  rgb(181, 222, 255)' }} // speech bubble arrow color
+                        date="APRIL 2019"
+                        iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }} // icon background + color
+                        icon={<FaLandmark />}
+                    >
+                        <h4 className="vertical-timeline-element-subtitle">Establishment</h4>
+                        <p>
+                            SmuAI was founded and established in April 2019.
+                        </p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={{ background: 'rgb(255, 199, 199)', color: '#000000' }} //speech bubble background color + text color
+                        contentArrowStyle={{ borderRight: '7px solid  rgb(255, 199, 199)' }} // speech bubble arrow color
+                        date="16 AUGUST 2019 (FRIDAY)"
+                        iconStyle={{ background: 'rgb(255, 0, 0)', color: '#fff' }} // icon background + color
+                        icon={<FaCalendarAlt />}
+                    >
+                        <h4 className="vertical-timeline-element-subtitle">VIVACE 2019</h4>
+                        <p>
+                            VIVACE is SMU’s annual CCA fair where more than 100 student clubs come together, proudly showcasing the best of student life SMU has to offer.
+                        </p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={{ background: 'rgb(205, 199, 235)', color: '#000000' }} //speech bubble background color + text color
+                        contentArrowStyle={{ borderRight: '7px solid  rgb(205, 199, 235)' }} // speech bubble arrow color
+                        date="21 AUGUST 2019 (WEDNESDAY)"
+                        iconStyle={{ background: 'rgb(23, 14, 71)', color: '#fff' }}
+                        icon={<FaInfo />}
+                    >
+                        <h4 className="vertical-timeline-element-subtitle">SmuAI Primer Session</h4>
+                        <p>
+                            SmuAI's very first information session, addressing how AI is going to power the next Industrial Revolution and its relevance today.
+                        </p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={{ background: 'rgb(255, 238, 209)', color: '#000000' }} //speech bubble background color + text color
+                        contentArrowStyle={{ borderRight: '7px solid  rgb(255, 238, 209)' }} // speech bubble arrow color
+                        date="28 AUGUST 2019 (WEDNESDAY)"
+                        iconStyle={{ background: 'rgb(255, 153, 0)', color: '#fff' }}
+                        icon={<FaBusinessTime />}
+                    >
+                        <h4 className="vertical-timeline-element-subtitle">Artificial Intelligence in Business: Unlocking Value from AI in Organizations</h4>
+                        <p>
+                            SmuAI's first panel discussion seeks to address the way leading providers of AI solutions are deploying business solutions in client settings and how it is delivering real business value.
+                        </p>
+                    </VerticalTimelineElement>
+                    <VerticalTimelineElement
+                        className="vertical-timeline-element--work"
+                        contentStyle={{ background: 'rgb(217, 255, 230)', color: '#000000' }} //speech bubble background color + text color
+                        contentArrowStyle={{ borderRight: '7px solid  rgb(217, 255, 230)' }} // speech bubble arrow color
+                        date="18 SEPTEMBER 2019 (WEDNESDAY)"
+                        iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+                        icon={<FaComments />}
+                    >
+                        <h4 className="vertical-timeline-element-subtitle">Artificial Intelligence in Business: Building Trust in AI through Transparency and Governance</h4>
+                        <p>
+                            SmuAI's second panel discussion includes introspective conversations on the way ethics is changing our everyday technology and its role in propelling AI forward.
+                        </p>
+                    </VerticalTimelineElement>
+                </VerticalTimeline>
+                </div>
+
                 <div className="row">
                     <div className="col-lg-5">
                         <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
@@ -169,6 +256,7 @@ export default class Home extends React.Component {
                         <br/><br/><br/>
                     </div>
                 </div>
+            </div>
             </div>
         )
     }

@@ -2635,7 +2635,7 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
-classnames@^2.2.5:
+classnames@^2.2.5, classnames@^2.2.6:
   version "2.2.6"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
@@ -8733,6 +8733,13 @@ react-grid-gallery@^0.5.5:
     prop-types "^15.5.8"
     react-images "^0.5.16"
 
+react-icons@^3.8.0:
+  version "3.8.0"
+  resolved "https://registry.yarnpkg.com/react-icons/-/react-icons-3.8.0.tgz#229de5904809696c9f46932bd9b6126b2522866e"
+  integrity sha512-rA/8GRKjPulft8BSBSMsHkE1AGPqJ7LjNsyk0BE7XjG70Iz62zOled2SJk7LDo8x9z86a3xOstDlKlMZ4pAy7A==
+  dependencies:
+    camelcase "^5.0.0"
+
 react-image-gallery@^0.8.18:
   version "0.8.18"
   resolved "https://registry.yarnpkg.com/react-image-gallery/-/react-image-gallery-0.8.18.tgz#bfc4698cbe22cbaa0b4e000994e7d248b2f098f2"
@@ -8979,6 +8986,15 @@ react-transition-group@^4.0.0:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
+react-vertical-timeline-component@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/react-vertical-timeline-component/-/react-vertical-timeline-component-2.5.0.tgz#0b8e54b21c0ce9ffc2fa2ce3831ad7f4001d68a3"
+  integrity sha512-922SH2Rxiuis1KwpHGSiMbegzIbkICEQpfHAQ2LuDW+oqQRhEaC27Mh73f+Fez7iEFqGYvMUEPzwjqfmRpQw6Q==
+  dependencies:
+    classnames "^2.2.6"
+    prop-types "^15.7.2"
+    react-visibility-sensor "^5.1.1"
+
 react-view-pager@^0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/react-view-pager/-/react-view-pager-0.6.0.tgz#6c6be04b0cc3b907b5ceafec7b2ab6e7228df650"
@@ -8990,6 +9006,13 @@ react-view-pager@^0.6.0:
     react-motion "^0.5.0"
     resize-observer-polyfill "1.5.0"
     tabbable "1.1.2"
+
+react-visibility-sensor@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/react-visibility-sensor/-/react-visibility-sensor-5.1.1.tgz#5238380960d3a0b2be0b7faddff38541e337f5a9"
+  integrity sha512-cTUHqIK+zDYpeK19rzW6zF9YfT4486TIgizZW53wEZ+/GPBbK7cNS0EHyJVyHYacwFEvvHLEKfgJndbemWhB/w==
+  dependencies:
+    prop-types "^15.7.2"
 
 react-vivus@^0.0.2:
   version "0.0.2"
