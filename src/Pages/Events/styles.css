@@ -108,3 +108,10 @@
 .vertical-timeline-element--work {
     font-weight: bold;
 }
+
+.box {
+    transition: box-shadow .3s;
+}
+.box:hover {
+    box-shadow: 0 0 20px rgb(27, 42, 82); 
+}

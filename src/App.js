@@ -31,7 +31,7 @@ class App extends React.Component {
           </Switch>
 
           <footer>
-            <Footer color="#c7c7c7"/>
+            <Footer color="#f2f2f2"/>
           </footer>
         </section>
       </Router>

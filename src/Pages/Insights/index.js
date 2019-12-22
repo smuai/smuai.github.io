@@ -164,8 +164,8 @@ export default function Insights() {
             </Slide>
 
             {images.map(image => (
-                <div className="container justify-content-center">
-                    <div className="row justify-content-center">
+                <div className="container">
+                    <div className="row">
                         <div className="col-lg-8 news-imgs">
                             <ButtonBase
                                 focusRipple

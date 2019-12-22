@@ -66,7 +66,7 @@ export default function People() {
             </Slide>
             <Container>
                 <Slide left>
-                    <p className="executive-committee">Executive Committee</p>
+                    <p className="executive-committee">First Executive Committee</p>
                 </Slide>
 
                 <div className="container">

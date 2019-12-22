@@ -5,6 +5,9 @@
   "dependencies": {
     "@material-ui/core": "^4.2.0",
     "@material-ui/icons": "^4.2.1",
+    "@progress/kendo-data-query": "^1.5.2",
+    "@progress/kendo-react-grid": "^3.9.0",
+    "@progress/kendo-ui": "^2019.3.1113",
     "add": "^2.0.6",
     "bulma": "^0.7.5",
     "material-ui": "^1.0.0-beta.47",

@@ -18,16 +18,16 @@ export default [
 	  linkedIn: "https://www.linkedin.com/in/charislow/",
 	},
 	{
+		name: "Zheng Xinxin",
+		img: require("../Images/Cindy.jpg"),
+		position: "Programmes Lead",
+		linkedIn: "https://www.linkedin.com/in/zxx/",
+	},
+	{
 	  name: "Johnathan Tan",
 	  img: require("../Images/Johnathan.jpg"),
 	  position: "Programmes Lead",
 	  linkedIn: "https://www.linkedin.com/in/johnathan-tan-kw/",
-	},
-	{
-	  name: "Zheng Xinxin",
-	  img: require("../Images/Cindy.jpg"),
-	  position: "Programmes Lead",
-	  linkedIn: "https://www.linkedin.com/in/zxx/",
 	},
 	{
 	  name: "Jeremy Ang",
