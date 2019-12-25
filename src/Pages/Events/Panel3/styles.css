@@ -1,0 +1,45 @@
+* {
+    font-family: Montserrat;
+}
+
+.speaker {
+    height: 150px;
+    width: auto;
+    border-radius: 50%;
+    margin-top: 6px;
+    margin-bottom: 15px;
+}
+
+.event-title {
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    .event-title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .event-title {
+        font-size: 24px;
+    }
+    .event-venue, .event-venue-2 {
+        font-size: 15px;
+    }
+    .panel-speakers {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 425px) {
+    .event-title {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 320px) {
+    .event-title {
+        font-size: 22px;
+    }
+}

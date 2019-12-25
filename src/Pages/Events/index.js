@@ -12,22 +12,10 @@ import Typography from '@material-ui/core/Typography';
 
 const event = [
     {
-        url: "/events/vivace19",
-        image: 'https://i.imgur.com/Ptt2EDK.jpg',
-        title: "VIVACE 2019",
-        subtitle: "VIVACE is SMU’s annual CCA fair where more than 100 student clubs come together, proudly showcasing the best of student life SMU has to offer."
-    },
-    {
-        url: "/events/primer",
-        image: "https://i.imgur.com/HqgKQK1.jpg",
-        title: "SmuAI Primer Session",
-        subtitle: "SmuAI's very first information session, addressing how AI is going to power the next Industrial Revolution and its relevance today."
-    },
-    {
-        url: "/events/panel1",
-        image: "https://i.imgur.com/J7RTEdJ.jpg",
-        title: "Unlocking Value from AI in Organizations",
-        subtitle: "SmuAI's first panel discussion seeks to address the way leading providers of AI solutions are deploying business solutions in client settings to deliver real business value."
+        url: "/events/panel3",
+        image: "https://i.imgur.com/giNX2Uq.jpg",
+        title: "SmuAI & StashAway: Ask Me Anything (AMA)",
+        subtitle: "An exciting entrepreneurial conference with Michele Ferrario, CEO & Co-Founder of StashAway."
     },
     {
         url: "/events/panel2",
@@ -36,10 +24,22 @@ const event = [
         subtitle: "SmuAI's second panel discussion includes introspective conversations on the way ethics is changing our everyday technology and its role in propelling AI forward."
     },
     {
-        url: "/events/panel3",
-        image: "https://i.imgur.com/giNX2Uq.jpg",
-        title: "SmuAI & StashAway: Ask Me Anything (AMA)",
-        subtitle: "An exciting entrepreneurial conference with Michele Ferrario, CEO & Co-Founder of StashAway."
+        url: "/events/panel1",
+        image: "https://i.imgur.com/J7RTEdJ.jpg",
+        title: "Unlocking Value from AI in Organizations",
+        subtitle: "SmuAI's first panel discussion seeks to address the way leading providers of AI solutions are deploying business solutions in client settings to deliver real business value."
+    },
+    {
+        url: "/events/primer",
+        image: "https://i.imgur.com/HqgKQK1.jpg",
+        title: "SmuAI Primer Session",
+        subtitle: "SmuAI's very first information session, addressing how AI is going to power the next Industrial Revolution and its relevance today."
+    },
+    {
+        url: "/events/vivace19",
+        image: 'https://i.imgur.com/Ptt2EDK.jpg',
+        title: "VIVACE 2019",
+        subtitle: "VIVACE is SMU’s annual CCA fair where more than 100 student clubs come together, proudly showcasing the best of student life SMU has to offer."
     },
 ];
 
