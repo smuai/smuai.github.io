@@ -20,7 +20,7 @@ const event = [
     {
         url: "/events/panel2",
         image: "https://i.imgur.com/X2Y2tqB.jpg",
-        title: "Building Trust in AI through Transparency and Governance",
+        title: "Transparency and Governance in AI",
         subtitle: "SmuAI's second panel discussion includes introspective conversations on the way ethics is changing our everyday technology and its role in propelling AI forward."
     },
     {
@@ -49,7 +49,7 @@ const useStyles = makeStyles(theme=>({
     },
     card: {
         width: 330,
-        height: 465,
+        height: 500,
         [theme.breakpoints.down(1025)]: {
             width: 290
         },
@@ -115,12 +115,8 @@ export default function Events() {
                                         image={ev.image}
                                     />
                                     <CardContent className='text-center'>
-                                        <Typography gutterBottom variant="h5" component="h2">
-                                            {ev.title}
-                                        </Typography>
-                                        <Typography variant="body2" color="textSecondary" component="p">
-                                            {ev.subtitle}
-                                        </Typography>
+                                        <h4><strong>{ev.title}</strong></h4>
+                                        <p>{ev.subtitle}</p>
                                     </CardContent>
                                 </Card>
                             </a>
