@@ -14,7 +14,7 @@ const event = [
         url: "http://tiny.cc/cnkzhz",
         image: "https://i.imgur.com/5uKWjkk.jpg",
         title: "Deciphering Singapore's National AI Strategy",
-        subtitle: "Find out how the National Artificial Intelligence Office intends to facilitate Singapore's transformation in becoming a Smart Nation leading the world in AI.",
+        subtitle: "Find out how the National AI Office facilitates Singapore's transformation to become a Smart Nation.",
         ongoing: true,
     },
     {
@@ -28,28 +28,28 @@ const event = [
         url: "/events/panel2",
         image: "https://i.imgur.com/X2Y2tqB.jpg",
         title: "Transparency and Governance in AI",
-        subtitle: "SmuAI's second panel discussion includes introspective conversations on the way ethics is changing our everyday technology and its role in propelling AI forward.",
+        subtitle: "This panel discussion features introspective conversations on the role of ethics in propelling AI forward.",
         ongoing: false,
     },
     {
         url: "/events/panel1",
         image: "https://i.imgur.com/J7RTEdJ.jpg",
         title: "Unlocking Value from AI in Organizations",
-        subtitle: "SmuAI's first panel discussion seeks to address the way leading providers of AI solutions are deploying business solutions in client settings to deliver real business value.",
+        subtitle: "Find out how leading providers of AI solutions are deploying business solutions to deliver business value.",
         ongoing: false,
     },
     {
         url: "/events/primer",
         image: "https://i.imgur.com/HqgKQK1.jpg",
         title: "SmuAI Primer Session",
-        subtitle: "SmuAI's very first information session, addressing how AI is going to power the next Industrial Revolution and its relevance today.",
+        subtitle: "SmuAI's very first information session addresses how AI is going to power the next Industrial Revolution and its relevance today.",
         ongoing: false,
     },
     {
         url: "/events/vivace19",
         image: 'https://i.imgur.com/Ptt2EDK.jpg',
         title: "VIVACE 2019",
-        subtitle: "VIVACE is SMU’s annual CCA fair where more than 100 student clubs come together, proudly showcasing the best of student life SMU has to offer.",
+        subtitle: "VIVACE is SMU’s annual CCA fair where student clubs come together, proudly showcasing the best of student life that SMU has to offer.",
         ongoing: false,
     },
 ];
@@ -59,16 +59,19 @@ const useStyles = makeStyles(theme=>({
         flexGrow: 1,
     },
     card: {
-        width: 330,
-        height: 520,
+        width: 350,
+        height: 475,
         [theme.breakpoints.down(1025)]: {
+            height: 520,
             width: 290
         },
         [theme.breakpoints.down(769)]: {
+            height: 470,
             width: 330
         },
         [theme.breakpoints.down(321)]: {
-            width: 300
+            width: 300,
+            height: 515,
         },
     },
     media: {
@@ -80,6 +83,12 @@ const useStyles = makeStyles(theme=>({
         textAlign: 'center',
         position: 'absolute',
         bottom: 25,
+        [theme.breakpoints.down(1025)]: {
+            bottom: 20
+        },
+        [theme.breakpoints.down(321)]: {
+            bottom: 16
+        },
         transform: "translate(-50%)",
         // width: 'auto',
         // right: 'auto',
@@ -142,7 +151,7 @@ export default function Events() {
                                     </CardContent>
                                     <div className={classes.eventStatus}>
                                         <Button variant="contained" color={ev.ongoing?"primary":"secondary"}>
-                                            {ev.ongoing?"Register Here":"View Details"}
+                                            {ev.ongoing?"Register":"View Details"}
                                         </Button>
                                     </div>
                                 </Card>
