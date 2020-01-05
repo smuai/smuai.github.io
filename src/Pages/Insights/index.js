@@ -7,53 +7,39 @@ import './styles.css'
 
 const images = [
     {
+        url: 'https://miro.medium.com/max/8000/1*avspAVY38CynflA1upwSBw.jpeg',
+        title: 'Will China be leading the world in AI by 2030?',
+        width: '100%',
+        link: 'https://medium.com/@smuaiclub/will-china-be-leading-the-world-in-artificial-intelligence-by-2030-55006e8851a0',
+        text: "What are some of China's intentions as the global superpower engages in the heated race for the dominant position in the field of AI? What would be the missing piece to China's grand strategy? Find the answers to these important questions here.",
+    },
+    {
+        url: 'https://miro.medium.com/max/2560/1*RbNJ-vvrFsb7inBLFuqJQQ.jpeg',
+        title: 'What we can learn from China’s National AI Strategy',
+        width: '100%',
+        link: 'https://medium.com/@smuaiclub/what-could-we-learn-from-chinas-national-ai-team-%E5%9B%BD%E5%AE%B6%E9%98%9F-strategy-3cb4732b3d25',
+        text: "SmuAI recently paid a visit to Tencent's headquarters and incubation lab in Shenzhen, China, to get a glimpse into the technology giant’s strategy as being part of China's National AI team.",
+    },
+    {
+        url: 'https://miro.medium.com/max/1966/1*NzeiaxIpqnTq6pGjOjtVLg.jpeg',
+        title: 'SmuAI & StashAway: Entrepreneurship AMA',
+        width: '100%',
+        link: 'https://medium.com/@smuaiclub/smu-ai-meets-michele-ferrario-co-founder-and-ceo-at-stashaway-7ad6e90e2f7a',
+        text: "In our third panel discussion, Michele Ferrario (CEO and Co-Founder of StashAway, former CEO of Zalora) shared with the audience his experience transitioning from his highly-coveted career in banking to taking the leap of faith into entrepreneurship.",
+    },
+    {
         url: 'https://miro.medium.com/max/2000/1*TjuiH3m704jCghlpiwQpwA.jpeg',
-        title: 'Building Trust in AI through Transparency and Governance',
+        title: 'Transparency & Governance in AI',
         width: '100%',
         link: 'https://medium.com/@smuaiclub/building-trust-in-ai-through-transparency-and-governance-58872d06fdcc',
         text: "Our second edition explores the Emergence of XAI (Explainable AI); how Biases and Unfairness can be mitigated when building AI Models; how Current Governance Frameworks seeks to build trust and transparency; and the market gaps in ensuring Fair and Transparent AI.",
     },
     {
         url: "https://miro.medium.com/max/5200/0*m2Uos8jT8k3D_7-c.png",
-        title: "Unlocking Value of AI in Organisations",
+        title: "Unlocking the Value of AI in Organisations",
         width: '100%',
         link: "https://medium.com/@smuaiclub/unlocking-value-of-ai-in-organisations-2e19e88ee9df",
         text: `What is Intelligence really? How is the understanding of business context key to creating relevant AI solutions? What are the hidden pains of using OCR? How must AI initiatives be driven by a multidisciplinary team? In our very first insights article, these are the topics we would be exploring.`
-    },
-    {
-        url: 'https://i.ytimg.com/vi/b9TfkgH0Xzw/maxresdefault.jpg',
-        title: 'Yuval Noah Harari & Fei-Fei Li on AI',
-        width: '100%',
-        link: 'https://towardsdatascience.com/yuval-noah-harari-and-fei-fei-li-on-ai-90d9a8686cc5',
-        text: "Artificial Intelligence is going to change every facet of our lives in the future, and the decisions and conversations should not be left to its creators who may be blinded from the effects of the technologies that they build. Here's an insightful summary of the conversations between the brightest minds in the industry.",
-    },
-    {
-        url: 'https://cdn.technologyreview.com/i/images/debate-emtech.jpg?sw=1536&cx=0&cy=0&cw=3556&ch=2000',
-        title: 'Should we tax robots?',
-        width: '100%',
-        link: 'https://www.technologyreview.com/f/613693/should-we-tax-robots-a-debate/?utm_campaign=the_download.unpaid.engagement&utm_source=hs_email&utm_medium=email&utm_content=73647734&_hsenc=p2ANqtz-9uR05zuvOR1JCFMze6RRA3p77KBIdBPKD02SudY1s5wOFX6p64to_Y8pndfAfFUWbpsUiii6YrWXF2YrztRjnrLtj4-w&_hsmi=73647734',
-        text: 'As digital trends including Artificial Intelligence change the future of work,  Tech Titans like Bill Gates has suggested to implement robot tax to make such technological advancements more socially inclusive. But what are the implications of such a tax? Tune in to the debate here.',
-    },
-    {
-        url: 'https://images.fastcompany.net/image/upload/w_1280,f_jpg,q_auto,fl_lossy/wp-cms/uploads/2019/06/p-1-ethical-ai-has-some-fundamental-bugs.gif',
-        title: 'Ethics in AI',
-        width: '100%',
-        link: 'https://www.fastcompany.com/90356295/the-rush-toward-ethical-ai-is-leaving-many-of-us-behind?utm_campaign=Compass&utm_medium=email&utm_source=Revue%20newsletter',
-        text: 'Ethics in AI is crucial but it becomes increasingly difficult when we have to constantly find alignment between the various stakeholders. Here are some considerations that you never knew existed.',
-    },
-    {
-        url: 'https://miro.medium.com/max/1400/1*zSrP-JuKtT9lQEXmGlwW7w.png',
-        title: 'Federated Learning',
-        width: '100%',
-        link: 'https://towardsdatascience.com/the-new-dawn-of-ai-federated-learning-8ccd9ed7fc3a',
-        text: "Ever wondered how Google trains its machine learning algorithm without the hassle of collecting your personal data which is a great liability for them in terms of ensuring privacy? This paticular method developed by Google's in house AI scientists allows them to do just that.",
-    },
-    {
-        url: 'https://cdn.technologyreview.com/i/images/sophievanderbroek-1.jpg?sw=5000&cx=0&cy=0&cw=3000&ch=1760',
-        title: 'IBM making a comeback with AI',
-        width: '100%',
-        link: 'https://www.technologyreview.com/s/613736/ai-mit-ibm-tech-business-future-of-work/?utm_campaign=the_algorithm.unpaid.engagement&utm_source=hs_email&utm_medium=email&utm_content=73698648&_hsenc=p2ANqtz-9vGx03b6eNffvEH0gmvt1FkCcOIH2XvqPTLET7_N1h33HES9wpcYqtixxpytXsCHy_OTm51v72qILb7IGzZm9Vvu5_Fw&_hsmi=73698648',
-        text: "IBM used to be a powerhouse of AI research, creating the first system to beat the grand master Gary Kasparov in his own game of chess. But with new organsations like OpenAI and even DeepMind, IBM seems to have faded into the background as a technology leader. However, IBM has a plan for a comeback and here's their strategy.",
     },
 ];
 
