@@ -13,7 +13,7 @@ export default function About() {
             <Slide top>
                 <h1 className="who-we-are">WHO WE ARE</h1>
             </Slide>
-            <img className="photoshoot1" src={photoshoot} alt="SmuAI team 1" />
+            <img className="photoshoot1" src={photoshoot} />
             <Container>
                 <div className="about">
                     <Fade bottom>
