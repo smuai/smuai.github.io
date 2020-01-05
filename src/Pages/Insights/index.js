@@ -15,7 +15,7 @@ const images = [
     },
     {
         url: 'https://miro.medium.com/max/2560/1*RbNJ-vvrFsb7inBLFuqJQQ.jpeg',
-        title: 'What we can learn from China’s National AI Strategy',
+        title: 'What we can learn from China’s National AI team Strategy',
         width: '100%',
         link: 'https://medium.com/@smuaiclub/what-could-we-learn-from-chinas-national-ai-team-%E5%9B%BD%E5%AE%B6%E9%98%9F-strategy-3cb4732b3d25',
         text: "SmuAI recently paid a visit to Tencent's headquarters and incubation lab in Shenzhen, China, to get a glimpse into the technology giant’s strategy as being part of China's National AI team.",
@@ -29,7 +29,7 @@ const images = [
     },
     {
         url: 'https://miro.medium.com/max/2000/1*TjuiH3m704jCghlpiwQpwA.jpeg',
-        title: 'Transparency & Governance in AI',
+        title: 'Building Trust in AI through Transparency & Governance',
         width: '100%',
         link: 'https://medium.com/@smuaiclub/building-trust-in-ai-through-transparency-and-governance-58872d06fdcc',
         text: "Our second edition explores the Emergence of XAI (Explainable AI); how Biases and Unfairness can be mitigated when building AI Models; how Current Governance Frameworks seeks to build trust and transparency; and the market gaps in ensuring Fair and Transparent AI.",
@@ -71,6 +71,8 @@ const useStyles = makeStyles(theme => ({
             },
             '& $imageTitle': {
                 border: '4px solid currentColor',
+                // left: 10,
+                // right: 10,
                 [theme.breakpoints.down(426)]: {
                     border: '2px solid currentColor',
                 },
@@ -111,6 +113,7 @@ const useStyles = makeStyles(theme => ({
     imageTitle: {
         textAlign: "center",
         position: 'relative',
+        margin: '30px',
         padding: `${theme.spacing(2)}px ${theme.spacing(4)}px ${theme.spacing(1) + 6}px`,
         [theme.breakpoints.down(426)]: {
             padding: `${theme.spacing(2)}px ${theme.spacing(1)}px ${theme.spacing(1) + 6}px`,
@@ -126,7 +129,7 @@ const useStyles = makeStyles(theme => ({
         overflow: "hidden",
         fontFamily: 'Montserrat',
     },
-    imageMarked: {
+    imageMarked: { //the little dash at the bottom of the title
         height: 5,
         width: 25,
         backgroundColor: theme.palette.common.white,
