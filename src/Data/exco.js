@@ -18,7 +18,7 @@ export default [
 	  linkedIn: "https://www.linkedin.com/in/charislow/",
 	},
 	{
-		name: "Zheng Xinxin (Cindy)",
+		name: "Cindy Zheng",
 		img: require("../Images/Cindy.jpg"),
 		position: "Programmes Lead",
 		linkedIn: "https://www.linkedin.com/in/zxx/",
