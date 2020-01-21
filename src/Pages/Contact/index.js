@@ -106,17 +106,17 @@ export default function Contact() {
                         <Slide bottom>
                             <div className="row">
                                 <div className="col-sm socials">
-                                    <a href="https://www.instagram.com/smu.ai/">
-                                        <img src={instagram} alt="Instagram" className="social-icon" />
-                                        <br/>
-                                        <p className="social-name">smu.ai</p>
-                                    </a>
-                                </div>
-                                <div className="col-sm socials">
                                     <a href="https://t.me/SmuAI" className={classes.a}>
                                         <img src={telegram} alt="Telegram" className="social-icon"/>
                                         <br/>
-                                        <p className="social-name">SmuAI News</p>
+                                        <p className="social-name">SmuAI</p>
+                                    </a>
+                                </div>
+                                <div className="col-sm socials">
+                                    <a href="https://www.instagram.com/smu.ai/">
+                                        <img src={instagram} alt="Instagram" className="social-icon" />
+                                        <br/>
+                                        <p className="social-name">@smu.ai</p>
                                     </a>
                                 </div>
                                 <div className="col-sm socials">
