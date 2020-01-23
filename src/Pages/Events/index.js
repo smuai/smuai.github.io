@@ -12,10 +12,10 @@ import Button from '@material-ui/core/Button';
 const event = [
     {
         url: "http://tiny.cc/cnkzhz",
-        image: "https://i.imgur.com/5uKWjkk.jpg",
+        image: "https://i.imgur.com/56R8HUl.jpg",
         title: "Deciphering Singapore's National AI Strategy",
         subtitle: "Find out how the National AI Office facilitates Singapore's transformation to become a Smart Nation.",
-        ongoing: true,
+        ongoing: false,
     },
     {
         url: "/events/panel3",
