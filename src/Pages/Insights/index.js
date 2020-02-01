@@ -8,7 +8,7 @@ import './styles.css'
 const images = [
     {
         url: 'https://miro.medium.com/max/4000/1*cBHtohg6mBPzN2TOu1JLxQ.jpeg',
-        title: 'Everything you need to know about Singapore’s AI Strategy',
+        title: 'Everything you need to know about Singapore’s National AI Strategy',
         width: '100%',
         link: 'https://medium.com/@smuaiclub/everything-you-need-to-know-about-singapores-ai-strategy-dd900f8186d1',
         text: "Here we discuss the National AI Office's framework in crafting AI policy and how strategic timelines are determined, the specific “benefits” that the office is looking for with AI intra-industry wise, and how businesses can better prepare to meet the needs of the \"5 National AI Projects\".",
