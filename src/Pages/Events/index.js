@@ -11,7 +11,21 @@ import Button from '@material-ui/core/Button';
 
 const event = [
     {
-        url: "http://tiny.cc/cnkzhz",
+        url: "https://www.eventbrite.sg/e/ai-and-the-future-of-work-finance-tickets-92313292543",
+        image: "https://i.imgur.com/Lo21ciu.jpg",
+        title: "Artificial Intelligence & Future of Work (Finance)",
+        subtitle: "The nature of work and jobs in the Finance industry is transforming as AI becomes ever more prevalent.",
+        ongoing: true,
+    },
+    {
+        url: "/events/grab-panel",
+        image: "https://i.imgur.com/KdYGOJh.jpg",
+        title: "Understanding Data Science & AI @ Grab",
+        subtitle: "Learn how Grab is leveraging Data Science and AI to streamline and accelerate its SEA business operations.",
+        ongoing: false,
+    },
+    {
+        url: "/events/panel4",
         image: "https://i.imgur.com/56R8HUl.jpg",
         title: "Deciphering Singapore's National AI Strategy",
         subtitle: "Find out how the National AI Office facilitates Singapore's transformation to become a Smart Nation.",
@@ -139,7 +153,7 @@ export default function Events() {
                     {event.map(ev=>(
                         <div className="col-sm" style={{marginBottom: "25px"}}>
                             <CardActionArea className={classes2.root}>
-                            <a href={ev.url} style={{textDecoration: "none"}} className="box">
+                            <a href={ev.url} target={ev.ongoing?"_blank":null} style={{textDecoration: "none"}} className="box">
                                 <Card className={classes.card}>
                                     <CardMedia
                                         className={classes.media}
