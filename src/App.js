@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 // import logo from './logo.svg';
 import './App.css';
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
@@ -17,6 +18,11 @@ import Panel1 from "./Pages/Events/Panel1"
 import Primer from "./Pages/Events/Primer"
 import GrabPanel from "./Pages/Events/GrabPanel"
 
+function initializeReactGA() {
+  ReactGA.initialize('UA-156160413-2');
+  ReactGA.pageview('/homepage');
+}
+
 class App extends React.Component {
   componentDidMount() {
     window.onbeforeunload = function () {
@@ -25,6 +31,11 @@ class App extends React.Component {
   }
 
   render() {
+    function initializeReactGA() {
+      ReactGA.initialize('UA-156160413-2');
+      ReactGA.pageview('/homepage');
+    }
+    
     return (
       <Router>
         <section>

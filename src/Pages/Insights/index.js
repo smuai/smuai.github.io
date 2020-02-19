@@ -7,42 +7,42 @@ import './styles.css'
 
 const images = [
     {
-        url: 'https://miro.medium.com/max/4000/1*cBHtohg6mBPzN2TOu1JLxQ.jpeg',
+        img: 'https://miro.medium.com/max/4000/1*cBHtohg6mBPzN2TOu1JLxQ.jpeg',
         title: 'Everything you need to know about Singapore’s National AI Strategy',
         width: '100%',
         link: 'https://medium.com/@smuaiclub/everything-you-need-to-know-about-singapores-ai-strategy-dd900f8186d1',
         text: "Here we discuss the National AI Office's framework in crafting AI policy and how strategic timelines are determined, the specific “benefits” that the office is looking for with AI intra-industry wise, and how businesses can better prepare to meet the needs of the \"5 National AI Projects\".",
     },
     {
-        url: 'https://miro.medium.com/max/8000/1*avspAVY38CynflA1upwSBw.jpeg',
+        img: 'https://miro.medium.com/max/8000/1*avspAVY38CynflA1upwSBw.jpeg',
         title: 'Will China be leading the world in AI by 2030?',
         width: '100%',
         link: 'https://medium.com/@smuaiclub/will-china-be-leading-the-world-in-artificial-intelligence-by-2030-55006e8851a0',
         text: "What are some of China's intentions as the global superpower engages in the heated race for the dominant position in the field of AI? What would be the missing piece to China's grand strategy? Find the answers to these important questions here.",
     },
     {
-        url: 'https://miro.medium.com/max/2560/1*RbNJ-vvrFsb7inBLFuqJQQ.jpeg',
+        img: 'https://miro.medium.com/max/2560/1*RbNJ-vvrFsb7inBLFuqJQQ.jpeg',
         title: 'What we can learn from China’s National AI team Strategy',
         width: '100%',
         link: 'https://medium.com/@smuaiclub/what-could-we-learn-from-chinas-national-ai-team-%E5%9B%BD%E5%AE%B6%E9%98%9F-strategy-3cb4732b3d25',
         text: "SmuAI recently paid a visit to Tencent's headquarters and incubation lab in Shenzhen, China, to get a glimpse into the technology giant’s strategy as being part of China's National AI team.",
     },
     {
-        url: 'https://miro.medium.com/max/1966/1*NzeiaxIpqnTq6pGjOjtVLg.jpeg',
+        img: 'https://miro.medium.com/max/1966/1*NzeiaxIpqnTq6pGjOjtVLg.jpeg',
         title: 'SmuAI & StashAway: Entrepreneurship AMA',
         width: '100%',
         link: 'https://medium.com/@smuaiclub/smu-ai-meets-michele-ferrario-co-founder-and-ceo-at-stashaway-7ad6e90e2f7a',
         text: "In our third panel discussion, Michele Ferrario (CEO and Co-Founder of StashAway, former CEO of Zalora) shared with the audience his experience transitioning from his highly-coveted career in banking to taking the leap of faith into entrepreneurship.",
     },
     {
-        url: 'https://miro.medium.com/max/2000/1*TjuiH3m704jCghlpiwQpwA.jpeg',
+        img: 'https://miro.medium.com/max/2000/1*TjuiH3m704jCghlpiwQpwA.jpeg',
         title: 'Building Trust in AI through Transparency & Governance',
         width: '100%',
         link: 'https://medium.com/@smuaiclub/building-trust-in-ai-through-transparency-and-governance-58872d06fdcc',
         text: "Our second edition explores the Emergence of XAI (Explainable AI); how Biases and Unfairness can be mitigated when building AI Models; how Current Governance Frameworks seeks to build trust and transparency; and the market gaps in ensuring Fair and Transparent AI.",
     },
     {
-        url: "https://miro.medium.com/max/5200/0*m2Uos8jT8k3D_7-c.png",
+        img: "https://miro.medium.com/max/5200/0*m2Uos8jT8k3D_7-c.png",
         title: "Unlocking the Value of AI in Organisations",
         width: '100%',
         link: "https://medium.com/@smuaiclub/unlocking-value-of-ai-in-organisations-2e19e88ee9df",
@@ -178,7 +178,7 @@ export default function Insights() {
                                 <span
                                     className={classes.imageSrc}
                                     style={{
-                                    backgroundImage: `url(${image.url})`,
+                                    backgroundImage: `url(${image.img})`,
                                     }}
                                 />
                                 <span className={classes.imageBackdrop} />
