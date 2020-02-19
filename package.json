@@ -30,7 +30,7 @@
     "scrollspy": "^1.6.0",
     "styled-components": "^4.3.2",
     "vivus": "^0.4.4",
-    "yarn": "^1.19.0"
+    "yarn": "^1.22.0"
   },
   "scripts": {
     "start": "react-scripts start",
