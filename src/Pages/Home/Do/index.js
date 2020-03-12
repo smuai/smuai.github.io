@@ -72,12 +72,12 @@ class Do extends React.Component {
                                     </Fade>
                                     <div class="justify-content-center" id="dialog-icon"/>
                                     <Slide bottom>
-                                        <p className="description">We facilitate panel discussions between distinguished academics and industry leaders within the AI community.</p>
+                                        <p className="description">We facilitate discussions with industry leaders and academics working with AI.</p>
                                     </Slide>
                                 </div>
                                 <div class="col-sm">
                                     <Fade bottom>
-                                        <h2 className="subtitle">RESEARCH</h2>
+                                        <h2 className="subtitle">INSIGHTS</h2>
                                     </Fade>
                                     <div id="research-icon"/>
                                     <Slide bottom>
