@@ -2,7 +2,8 @@ import React from "react"
 import Container from '@material-ui/core/Container';
 import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
-import bio from '../../Data/exco'
+import bio1 from '../../Data/exco1'
+import bio2 from '../../Data/exco2'
 import Member from '../../Components/Member'
 import './styles.css'
 
@@ -58,7 +59,6 @@ const advisors = [
 ]
 
 export default function People() {
-    
     return (
         <div id="people">
             <Slide top>
@@ -71,7 +71,25 @@ export default function People() {
 
                 <div className="container">
                     <div class="row justify-content-center">
-                        {bio.map(profile => {
+                        {bio1.map(profile => {
+                            return (
+                                <div className="col-sm exco-profile">
+                                    <Fade bottom>
+                                        <Member member={profile} />
+                                    </Fade>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
+
+                <Slide left>
+                    <p className="executive-committee">Second Executive Committee</p>
+                </Slide>
+
+                <div className="container">
+                    <div class="row justify-content-center">
+                        {bio2.map(profile => {
                             return (
                                 <div className="col-sm exco-profile">
                                     <Fade bottom>
