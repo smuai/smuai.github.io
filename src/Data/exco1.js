@@ -19,7 +19,7 @@ export default [
 	},
 	{
 		name: "Cindy Zheng",
-		img: require("../Images/Cindy.JPG"),
+		img: require("../Images/Cindy.jpg"),
 		position: "Programmes Lead",
 		linkedIn: "https://www.linkedin.com/in/zxx/",
 	},
