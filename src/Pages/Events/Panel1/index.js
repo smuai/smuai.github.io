@@ -1,4 +1,5 @@
 import React from "react"
+// import "./styles.css"
 import background from '../../../Images/landing.jpg'
 import crouspeyre from '../../../Images/crouspeyre.jpeg'
 import manders from '../../../Images/manders.jpg'

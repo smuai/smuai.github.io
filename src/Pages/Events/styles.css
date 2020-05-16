@@ -1,3 +1,76 @@
+/* #events {
+    font-family: "Montserrat";
+}
+
+.our-events {
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 110px;
+    margin-bottom: 30px;
+}
+
+.poster {
+    display: block;
+    margin: auto;
+    margin-bottom: 100px;
+    height: 700px;
+    width: auto;
+}
+
+
+@media (max-width: 1024px) {
+    .our-events {
+        font-size: 40px;
+        margin-top: 100px;
+    }
+
+    .poster {
+        margin-bottom: 70px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .our-events {
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .poster {
+        height: 580px;
+    }
+
+    .our-events {
+        margin-top: 90px;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .poster {
+        height: 500px;
+        margin-bottom: 40px;
+    }
+
+    .our-events {
+        margin-top: 80px;
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+}
+
+
+@media (max-width: 320px) {
+    .poster {
+        height: 440px;
+        margin-bottom: 93px;
+    }
+} */
+
 #carouselExampleIndicators {
     margin-top: 90px;
     margin-bottom: 30px;
@@ -10,6 +83,9 @@
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     filter: invert(50%);
+    /* outline: black;
+    border-radius: 100%;
+    border: 1px solid black; */
 }
 
 #gallery {

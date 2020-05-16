@@ -4,6 +4,7 @@
     background-size: cover;
     background-attachment: fixed;
     color: white;
+    /* height: 320vh; */
     font-family: "Montserrat";
 }
 
@@ -22,6 +23,7 @@
     border-left: 2px solid white;
     margin-bottom: 60px;
     overflow: hidden;
+    /* font-weight: bold; */
 }
 
 .exco-profile {
@@ -141,7 +143,9 @@
         border-left: 0px;
         padding-left: 0px;
         text-align: center;
+        /* font-weight: bold; */
         text-transform: uppercase;
+        /* text-decoration: underline; */
     }
 
     #people .container {

@@ -1,6 +1,7 @@
 import React from "react"
 import './styles.css'
 import Slide from "react-reveal/Slide";
+import Container from '@material-ui/core/Container';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -14,7 +15,7 @@ const event = [
         image: "https://i.imgur.com/Lo21ciu.jpg",
         title: "Artificial Intelligence & Future of Work (Finance)",
         subtitle: "The nature of work and jobs in the Finance industry is transforming as AI becomes ever more prevalent.",
-        ongoing: false,
+        ongoing: true,
     },
     {
         url: "/events/grab-panel",
@@ -103,6 +104,8 @@ const useStyles = makeStyles(theme=>({
             bottom: 16
         },
         transform: "translate(-50%)",
+        // width: 'auto',
+        // right: 'auto',
         left: '50%',
     },
 }));
@@ -121,8 +124,23 @@ const muiStyle = makeStyles({
 }, {name: 'MuiButtonBase'});
 
 export default function Events() {
+    // state = {
+    //     selectedIndex: 0,
+    //     lightboxIsOpen: false,
+    // };
+    
+    // toggleLightbox = () => {
+    //     this.setState(state => ({
+    //         lightboxIsOpen: !state.lightboxIsOpen,
+    //         selectedIndex,
+    //     }));
+    // };
     const classes = useStyles();
     const classes2 = muiStyle();
+
+    // render() {
+        // const { images, isLoading } = this.props;
+        // const { selectedIndex, lightboxIsOpen } = this.state;
 
     return (
         <div id="events">
@@ -161,4 +179,5 @@ export default function Events() {
             </div>
         </div>
     );
+    // }
 }

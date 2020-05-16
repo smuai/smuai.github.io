@@ -1,4 +1,5 @@
 import React from "react"
+// import "./styles.css"
 import background from '../../../Images/landing.jpg'
 
 export default function Vivace19() {
@@ -23,6 +24,7 @@ export default function Vivace19() {
                         <br/><br/>
                         <h1 className="event-title">VIVACE 2019</h1>
                         <br/>
+                        {/* <h5 className="text-center">VIVACE (vɪˈvɑːtʃeɪ)<br/>adverb & adjective<br/>in a lively and brisk manner</h5> */}
                         <p style={{fontWeight:"bold"}}>What is AI really?<br/>Why should you care about AI even if you do not have a technical background?</p>
                         <p>At SmuAI, we seek to offer you cutting edge perspectives about industry trends and the latest topics through our organised dialogues with leading thinkers and influencers from academia and the private sector. Join us to discuss about these issues that you should care about.</p>
                         <p>Come on down to our booth near <strong>SIS basement</strong> to find out more at VIVACE on 16th August 2019!</p>

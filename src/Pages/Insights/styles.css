@@ -1,6 +1,9 @@
 #insights {
+    /* overflow: hidden; */
+    /* display: flex; */
     flex-wrap: wrap;
     min-width: 300;
+    /* width: 100%; */
     margin-top: 70px;
     font-family: 'Montserrat';
 }
