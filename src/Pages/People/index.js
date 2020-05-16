@@ -65,13 +65,12 @@ export default function People() {
                 <h1 className="meet-our-team">MEET OUR TEAM</h1>
             </Slide>
             <Container>
-                <Slide left>
-                    <p className="executive-committee">First Executive Committee</p>
+                {/* <Slide left>
+                    <p className="executive-committee">Second Executive Committee (Academic Year 2020-2021)</p>
                 </Slide>
-
                 <div className="container">
                     <div class="row justify-content-center">
-                        {bio1.map(profile => {
+                        {bio2.map(profile => {
                             return (
                                 <div className="col-sm exco-profile">
                                     <Fade bottom>
@@ -81,15 +80,14 @@ export default function People() {
                             );
                         })}
                     </div>
-                </div>
+                </div> */}
 
                 <Slide left>
-                    <p className="executive-committee">Second Executive Committee</p>
+                    <p className="executive-committee">First Executive Committee (Academic Year 2019-2020)</p>
                 </Slide>
-
                 <div className="container">
                     <div class="row justify-content-center">
-                        {bio2.map(profile => {
+                        {bio1.map(profile => {
                             return (
                                 <div className="col-sm exco-profile">
                                     <Fade bottom>
