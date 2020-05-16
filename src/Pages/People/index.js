@@ -109,18 +109,15 @@ export default function People() {
                             <div className="row justify-content-center">
                                 {advisors.map(advisor => {
                                     return (
-                                        // <div>
-                                            <div className={advisor.name=="JOHNATHAN PAN"||advisor.name=="DAI BING TIAN" ? "col-lg-6 col-sm text-center advisor-profile" : 'col-lg advisor-profile'}>
-                                                <a href={advisor.link}>
-                                                    <Fade bottom>
-                                                        <img className="advisor-img" src={advisor.image} alt={advisor.name} height={advisor.size=="big" ? "300px" : "200px"} />
-                                                        <h4 className="advisor-name"><strong>{advisor.name}</strong></h4>
-                                                        {/* <br/> */}
-                                                        <h5 className="advisor-position">{advisor.position1}<br/>{advisor.position2}</h5>
-                                                    </Fade>
-                                                </a>
-                                            </div>
-                                        // </div>
+                                        <div className={advisor.name=="JOHNATHAN PAN"||advisor.name=="DAI BING TIAN" ? "col-lg-6 col-sm text-center advisor-profile" : 'col-lg advisor-profile'}>
+                                            <a href={advisor.link}>
+                                                <Fade bottom>
+                                                    <img className="advisor-img" src={advisor.image} alt={advisor.name} height={advisor.size=="big" ? "300px" : "200px"} />
+                                                    <h4 className="advisor-name"><strong>{advisor.name}</strong></h4>
+                                                    <h5 className="advisor-position">{advisor.position1}<br/>{advisor.position2}</h5>
+                                                </Fade>
+                                            </a>
+                                        </div>
                                     );
                                 })}
                             </div>

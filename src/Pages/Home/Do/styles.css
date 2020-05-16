@@ -11,10 +11,8 @@
     background-image: url('../../../Images/landing.jpg');
     background-size: cover;
     background-attachment: fixed;
-    /* align-content: center; */
     overflow: hidden;
     color: white;
-    /* height: 110vh; */
 }
 
 #do .subtitle {
@@ -26,7 +24,6 @@
     stroke: white;
     stroke-width: 8;
     fill: none;
-    /* width: 160px; */
     height: 200px;
     justify-content: center
 }
@@ -37,7 +34,6 @@
 }
 
 #do .description {
-    /* margin-bottom: 120px; */
     margin-top: 50px;
     font-size: 20px;
     padding-left: 15px;
@@ -57,7 +53,6 @@
     font-size: 23px;
     margin-left: 175px;
     padding-left: 20px;
-    /* padding-right: 25px; */
     border-left: 1px solid white;
     text-align: left;
     margin-bottom: 150px;

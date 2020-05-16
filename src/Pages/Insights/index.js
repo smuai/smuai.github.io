@@ -78,8 +78,6 @@ const useStyles = makeStyles(theme => ({
             },
             '& $imageTitle': {
                 border: '4px solid currentColor',
-                // left: 10,
-                // right: 10,
                 [theme.breakpoints.down(426)]: {
                     border: '2px solid currentColor',
                 },

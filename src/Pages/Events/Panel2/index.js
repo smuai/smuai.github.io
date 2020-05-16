@@ -1,5 +1,4 @@
 import React from "react"
-// import "./styles.css"
 import background from '../../../Images/landing.jpg'
 import jason from '../../../Images/jason.jpeg'
 import warren from '../../../Images/warren.jpg'

@@ -1,5 +1,4 @@
 import React from "react"
-// import "./styles.css"
 import background from '../../../Images/landing.jpg'
 import kaiyi from '../../../Images/kaiyi.jpg'
 import aparna from '../../../Images/aparna.png'
