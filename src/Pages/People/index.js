@@ -9,8 +9,8 @@ import './styles.css'
 const advisors = [
     {
         name: 'STEVEN MILLER',
-        position1: 'Vice Provost (Research)',
-        position2: 'Professor of Information Systems',
+        position1: 'Professor Emeritus of Information Systems',
+        position2: 'Founder and Principal Consultant, Hybrid Intelligence Advisory',
         image: "https://staffphoto.smu.edu.sg/s/stevenmiller/600x400",
         link: "https://www.smu.edu.sg/faculty/profile/9631/Steven-MILLER",
         size: "big",
@@ -18,7 +18,7 @@ const advisors = [
     {
         name: 'GOH YIHAN',
         position1: 'Professor of Law',
-        position2: 'Director, Center for AI and Data Governance',
+        position2: 'Principal Investigator, Center for AI and Data Governance',
         image: "https://staffphoto.smu.edu.sg/s/yihangoh/600x400",
         link: "https://www.smu.edu.sg/faculty/profile/108226/GOH-Yihan",
         size: "big",
@@ -33,15 +33,15 @@ const advisors = [
     },
     {
         name: 'JOHNATHAN PAN',
-        position1: 'Director, Ministry of Home Affairs',
-        position2: '(Robotics, Cybersecurity, Applied AI)',
+        position1: 'Chief (Disruptive Technologies Office)',
+        position2: 'Home Team Science and Technology Agency',
         image: 'https://i1.rgstatic.net/ii/profile.image/788036329680902-1564893910210_Q512/Jonathan_Pan4.jpg',
         link: "https://www.linkedin.com/in/dr-jonathan-pan-b6590491/",
-        size: "small",
+        size: "medium",
     },
     {
         name: 'SWAPNA GOTTIPATI',
-        position1: 'Programme Director,',
+        position1: 'Associate Dean,',
         position2: 'BSc (IS) Information Systems Major',
         image: 'https://staffphoto.smu.edu.sg/s/swapnag/600x400',
         link: "https://www.smu.edu.sg/faculty/profile/105401/Swapna-GOTTIPATI",
@@ -49,7 +49,7 @@ const advisors = [
     },
     {
         name: "ZHENG ZHICHAO DANIEL",
-        position1: "Assistant Professor",
+        position1: "Associate Professor,",
         position2: "Operations Management",
         image: 'https://staffphoto.smu.edu.sg/s/danielzheng/600x400',
         link: 'https://www.smu.edu.sg/faculty/profile/84243/ZHENG-Zhichao-Daniel',
@@ -80,8 +80,8 @@ export default function People() {
                         })}
                     </div>
                 </div> */}
-
-                <Slide left>
+                
+                <Slide left> 
                     <p className="executive-committee">First Executive Committee (Academic Year 2019-2020)</p>
                 </Slide>
                 <div className="container">
