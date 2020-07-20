@@ -9,7 +9,7 @@ import './styles.css'
 const advisors = [
     {
         name: 'STEVEN MILLER',
-        position1: 'Professor Emeritus of Information Systems',
+        position1: 'Professor Emeritus of Information Systems, Singapore Management University',
         position2: 'Founder and Principal Consultant, Hybrid Intelligence Advisory',
         image: "https://staffphoto.smu.edu.sg/s/stevenmiller/600x400",
         link: "https://www.smu.edu.sg/faculty/profile/9631/Steven-MILLER",
@@ -17,7 +17,7 @@ const advisors = [
     },
     {
         name: 'GOH YIHAN',
-        position1: 'Professor of Law',
+        position1: 'Professor of Law, Singapore Management University',
         position2: 'Principal Investigator, Center for AI and Data Governance',
         image: "https://staffphoto.smu.edu.sg/s/yihangoh/600x400",
         link: "https://www.smu.edu.sg/faculty/profile/108226/GOH-Yihan",
@@ -26,14 +26,14 @@ const advisors = [
     {
         name: 'DAI BING TIAN',
         position1: 'Director,',
-        position2: 'MITB (AI) Programme',
+        position2: 'MITB (AI) Programme, Singapore Management University',
         image: 'https://sis.smu.edu.sg/sites/sis.smu.edu.sg/files/sis/programmes/MITB/images/new-site-2018/faculty/full/faculty-pic-dai-bing-tian.jpg',
         link: "https://www.smu.edu.sg/faculty/profile/146776/DAI-Bing-Tian",
         size: "small",
     },
     {
         name: 'JOHNATHAN PAN',
-        position1: 'Chief (Disruptive Technologies Office)',
+        position1: 'Chief (Disruptive Technologies Office),',
         position2: 'Home Team Science and Technology Agency',
         image: 'https://i1.rgstatic.net/ii/profile.image/788036329680902-1564893910210_Q512/Jonathan_Pan4.jpg',
         link: "https://www.linkedin.com/in/dr-jonathan-pan-b6590491/",
@@ -42,7 +42,7 @@ const advisors = [
     {
         name: 'SWAPNA GOTTIPATI',
         position1: 'Associate Dean,',
-        position2: 'BSc (IS) Information Systems Major',
+        position2: 'BSc (IS) Information Systems Major, Singapore Management University',
         image: 'https://staffphoto.smu.edu.sg/s/swapnag/600x400',
         link: "https://www.smu.edu.sg/faculty/profile/105401/Swapna-GOTTIPATI",
         size: "big",
@@ -50,7 +50,7 @@ const advisors = [
     {
         name: "ZHENG ZHICHAO DANIEL",
         position1: "Associate Professor,",
-        position2: "Operations Management",
+        position2: "Operations Management, Singapore Management University",
         image: 'https://staffphoto.smu.edu.sg/s/danielzheng/600x400',
         link: 'https://www.smu.edu.sg/faculty/profile/84243/ZHENG-Zhichao-Daniel',
         size: "big",
