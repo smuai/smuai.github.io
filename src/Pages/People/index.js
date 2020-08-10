@@ -3,6 +3,7 @@ import Container from '@material-ui/core/Container';
 import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
 import bio1 from '../../Data/exco1'
+import bio2 from '../../Data/exco2'
 import Member from '../../Components/Member'
 import './styles.css'
 
@@ -64,7 +65,7 @@ export default function People() {
                 <h1 className="meet-our-team">MEET OUR TEAM</h1>
             </Slide>
             <Container>
-                {/* <Slide left>
+                 <Slide left>
                     <p className="executive-committee">Second Executive Committee (Academic Year 2020-2021)</p>
                 </Slide>
                 <div className="container">
@@ -79,7 +80,7 @@ export default function People() {
                             );
                         })}
                     </div>
-                </div> */}
+                </div>
                 
                 <Slide left> 
                     <p className="executive-committee">First Executive Committee (Academic Year 2019-2020)</p>

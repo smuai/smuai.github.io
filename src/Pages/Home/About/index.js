@@ -1,7 +1,8 @@
 import React from "react"
 import Container from '@material-ui/core/Container';
-import photoshoot from '../../../Images/exco.jpg'
-import photoshoot2 from '../../../Images/exco2.jpg'
+// import photoshoot from '../../../Images/exco.jpg'
+// import photoshoot2 from '../../../Images/exco2.jpg'
+import photoshoot from '../../../Images/group1.jpg'
 import Slide from "react-reveal/Slide";
 import Fade from 'react-reveal/Fade';
 import './styles.css'
@@ -30,7 +31,8 @@ export default function About() {
                 <div className="ourmission">
                     <Fade bottom>
                         <p className="mission">To cultivate and spread ideas about Artificial Intelligence.</p>
-                        <img className="photoshoot2" src={photoshoot2} alt="SmuAI team 2" />
+                        {/* <img className="photoshoot2" src={photoshoot} alt="SmuAI team 2" /> */}
+                        <br/>
                     </Fade>
                 </div>
             </Container>
