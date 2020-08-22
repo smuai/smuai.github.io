@@ -10,6 +10,13 @@ import Button from '@material-ui/core/Button';
 
 const event = [
     {
+        url: "/events/Carousell",
+        image: "https://i.imgur.com/PKSgeVN.jpg",
+        title: "AI in E-commerce: Carousell's Strategy for Transforming Customer Experience",
+        // subtitle: "The nature of work and jobs in the Finance industry is transforming as AI becomes ever more prevalent.",
+        ongoing: false,
+    },
+    {
         url: "https://www.eventbrite.sg/e/ai-and-the-future-of-work-finance-tickets-92313292543",
         image: "https://i.imgur.com/Lo21ciu.jpg",
         title: "Artificial Intelligence & Future of Work (Finance)",
