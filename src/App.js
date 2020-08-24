@@ -42,7 +42,7 @@ class App extends React.Component {
             <Route exact path="/events/panel2" component={Panel2}/>
             <Route exact path="/events/panel1" component={Panel1}/>
             <Route exact path="/events/primer" component={Primer}/>
-            <Route exact path="/events/Carousell" component={Carousell}/>
+            <Route exact path="/events/carousell" component={Carousell}/>
           </Switch>
 
           <footer>

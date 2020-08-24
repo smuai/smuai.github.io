@@ -10,7 +10,7 @@ import Button from '@material-ui/core/Button';
 
 const event = [
     {
-        url: "/events/Carousell",
+        url: "/events/carousell",
         image: "https://i.imgur.com/PKSgeVN.jpg",
         title: "AI in E-commerce: Carousell's Strategy for Transforming Customer Experience",
         // subtitle: "The nature of work and jobs in the Finance industry is transforming as AI becomes ever more prevalent.",
