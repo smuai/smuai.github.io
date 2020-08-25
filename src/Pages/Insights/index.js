@@ -7,6 +7,13 @@ import './styles.css'
 
 const images = [
     {
+        img: 'https://miro.medium.com/max/1094/1*ghDkPYJRJdA7nqm01_1fhA.jpeg',
+        title: 'Understanding Grab’s foray into AI — more than just a US$150 million-dollar bet',
+        width: '100%',
+        link: 'https://medium.com/@smuaiclub/understanding-grabs-foray-into-ai-more-than-a-us-150-million-dollar-bet-95d36c8bcf5d',
+        text: "In the recent days, many companies have joined in the bandwagon by investing in AI initiatives. Among them is the South East Asian ride-hailling giant, Grab. While companies failed to report business gains from AI, we will talk about how Grab will make a difference.",
+    },
+    {
         img: 'https://miro.medium.com/max/4000/1*cBHtohg6mBPzN2TOu1JLxQ.jpeg',
         title: 'Everything you need to know about Singapore’s National AI Strategy',
         width: '100%',
