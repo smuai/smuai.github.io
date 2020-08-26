@@ -56,6 +56,14 @@ const advisors = [
         link: 'https://www.smu.edu.sg/faculty/profile/84243/ZHENG-Zhichao-Daniel',
         size: "big",
     },
+    {
+        name: "ZHAOXIA WANG",
+        position1: "Associate Professor of Information Systems,",
+        position2: "Singpaore Management University",
+        image: 'https://sis.smu.edu.sg/sites/sis.smu.edu.sg/files/sis/programmes/MITB/images/new-site-2018/faculty/adjunct/faculty-pic-wang-zhaoxia.jpg',
+        link: 'https://www.smu.edu.sg/faculty/profile/161841/WANG-Zhaoxia',
+        size: "big",
+    }
 ]
 
 export default function People() {
