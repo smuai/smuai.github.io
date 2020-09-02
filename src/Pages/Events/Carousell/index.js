@@ -6,7 +6,7 @@ import sidd from '../../../Images/sidd.jpg'
 
 export default function Carousell() {
     return (
-        <div id="grab-panel">
+        <div id="carousell">
             <div className="container">
                 <div className="row">
                     <div className="datepanel col-md-3 border" style={{backgroundImage: `url(${background})`}}>
@@ -18,7 +18,6 @@ export default function Carousell() {
                             <br/><br/>
                             <h4 style={{color: "gold"}}>VENUE</h4>
                             <h5 className="event-venue" style={{color: "white"}}>Online via Zoom</h5>
-                            <p className="event-venue-2" style={{color: "white"}}><a href='https://docs.google.com/forms/d/e/1FAIpQLSeaC-Hz2ACU8Zmg05qo30ooP0M8n_ENvcuQIlYzodu4Xdajlw/viewform'>Registration Link</a></p>
                             <br/><br/>
                         </div>
                     </div>

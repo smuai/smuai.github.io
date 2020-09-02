@@ -10,6 +10,13 @@ import Button from '@material-ui/core/Button';
 
 const event = [
     {
+        url: "/events/a-star",
+        image: "https://i.imgur.com/gGaf7CQ.jpg",
+        title: "AI in R&D: Understanding Humans from an AI Perspective",
+        subtitle: "Find out how the R&D department is developing a human-centric AI",
+        ongoing: true,
+    },
+    {
         url: "/events/carousell",
         image: "https://i.imgur.com/PKSgeVN.jpg",
         title: "AI in E-commerce: Carousell's Strategy for Transforming Customer Experience",

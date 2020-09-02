@@ -16,6 +16,7 @@ import Panel1 from "./Pages/Events/Panel1"
 import Primer from "./Pages/Events/Primer"
 import GrabPanel from "./Pages/Events/GrabPanel"
 import Carousell from "./Pages/Events/Carousell"
+import a_star from "./Pages/Events/a-star"
 
 class App extends React.Component {
   componentDidMount() {
@@ -43,6 +44,7 @@ class App extends React.Component {
             <Route exact path="/events/panel1" component={Panel1}/>
             <Route exact path="/events/primer" component={Primer}/>
             <Route exact path="/events/carousell" component={Carousell}/>
+            <Route exact path="/events/a-star" component={a_star}/>
           </Switch>
 
           <footer>
