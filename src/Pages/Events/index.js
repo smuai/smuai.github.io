@@ -12,7 +12,7 @@ const event = [
     {
         url: "/events/legal-tech",
         image: "https://imgur.com/FFfhFjr.png",
-        title: "AI in Law: Disuprtive or Constructive?",
+        title: "AI in Law: Disruptive or Constructive?",
         subtitle: "The development of AI has expanded across the legal industry. Learn how AI will disrupt or improve the industry",
         ongoing: true,
     },
