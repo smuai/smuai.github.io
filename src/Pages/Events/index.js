@@ -10,6 +10,13 @@ import Button from '@material-ui/core/Button';
 
 const event = [
     {
+        url: "/events/ai-in-se-asia",
+        image: "https://imgur.com/93kSxUd.jpg",
+        title: "AI Adoption Trends Across Southeast Asia",
+        subtitle: "Discover key insights about adoptions of AI in the Southeast Asia",
+        ongoing: true
+    },
+    {
         url: "/events/legal-tech",
         image: "https://imgur.com/FFfhFjr.png",
         title: "AI in Law: Disruptive or Constructive?",

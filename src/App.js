@@ -17,7 +17,8 @@ import Primer from "./Pages/Events/Primer"
 import GrabPanel from "./Pages/Events/GrabPanel"
 import Carousell from "./Pages/Events/Carousell"
 import a_star from "./Pages/Events/a-star"
-import legal_tect from "./Pages/Events/legal-tech"
+import legal_tech from "./Pages/Events/legal-tech"
+import ai_in_se_asia from "./Pages/Events/ai_in_se_asia"
 
 class App extends React.Component {
   componentDidMount() {
@@ -46,7 +47,8 @@ class App extends React.Component {
             <Route exact path="/events/primer" component={Primer}/>
             <Route exact path="/events/carousell" component={Carousell}/>
             <Route exact path="/events/a-star" component={a_star}/>
-            <Route exact path="/events/legal-tech" component={legal_tect}/>
+            <Route exact path="/events/legal-tech" component={legal_tech}/>
+            <Route exact path="/events/ai-in-se-asia" component={ai_in_se_asia}/>
           </Switch>
 
           <footer>
