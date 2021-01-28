@@ -10,11 +10,18 @@ import Button from '@material-ui/core/Button';
 
 const event = [
     {
+        url: "/events/foodtech",
+        image: "https://i.imgur.com/DF4wOCl.jpg",
+        title: "Alternative Proteins: Balancing Quantity and Quality",
+        subtitle: "Learn the food industry is evolving with AI",
+        ongoing: true
+    },
+    {
         url: "/events/ai-in-se-asia",
         image: "https://imgur.com/93kSxUd.jpg",
         title: "AI Adoption Trends Across Southeast Asia",
         subtitle: "Discover key insights about adoptions of AI in the Southeast Asia",
-        ongoing: true
+        ongoing: false
     },
     {
         url: "/events/legal-tech",
