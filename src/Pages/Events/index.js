@@ -10,11 +10,18 @@ import Button from '@material-ui/core/Button';
 
 const event = [
     {
+        url: "/events/fireside",
+        image: "https://i.imgur.com/sw3CNRw.jpg",
+        title: "SMUAI Fireside Chat",
+        subtitle: "Join us in a fireside discussion and ask your burning questions about the AI industry",
+        ongoing: true
+    },
+    {
         url: "/events/foodtech",
         image: "https://i.imgur.com/DF4wOCl.jpg",
         title: "Alternative Proteins: Balancing Quantity and Quality",
         subtitle: "Learn the food industry is evolving with AI",
-        ongoing: true
+        ongoing: false
     },
     {
         url: "/events/ai-in-se-asia",
