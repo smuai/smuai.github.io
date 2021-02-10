@@ -20,7 +20,7 @@ import a_star from "./Pages/Events/a-star"
 import legal_tech from "./Pages/Events/legal-tech"
 import ai_in_se_asia from "./Pages/Events/ai_in_se_asia"
 import foodTech from "./Pages/Events/foodtech"
-import fireside from "./Pages/Events/fireside"
+import aiHR from "./Pages/Events/aiHR"
 
 class App extends React.Component {
   componentDidMount() {
@@ -52,7 +52,7 @@ class App extends React.Component {
             <Route exact path="/events/legal-tech" component={legal_tech}/>
             <Route exact path="/events/ai-in-se-asia" component={ai_in_se_asia}/>
             <Route exact path="/events/foodtech" component={foodTech}/>
-            <Route exact path="/events/fireside" component={fireside}/>
+            <Route exact path="/events/ai-in-hr" component={aiHR}/>
           </Switch>
 
           <footer>

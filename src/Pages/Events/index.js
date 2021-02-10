@@ -10,10 +10,10 @@ import Button from '@material-ui/core/Button';
 
 const event = [
     {
-        url: "/events/fireside",
-        image: "https://i.imgur.com/sw3CNRw.jpg",
-        title: "SMUAI Fireside Chat",
-        subtitle: "Join us in a fireside discussion and ask your burning questions about the AI industry",
+        url: "/events/ai-in-hr",
+        image: "https://i.imgur.com/CYfXHqk.jpg",
+        title: "AI in HR",
+        subtitle: "Join us in a discussion on how AI is revolutionizing recruitment in human resources",
         ongoing: true
     },
     {
