@@ -8,13 +8,14 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 
+// TODO: Add events here, ongoing is true -> button will be register. ongoing is false -> button is view details.
 const event = [
     {
         url: "/events/ai-in-hr",
         image: "https://i.imgur.com/CYfXHqk.jpg",
         title: "AI in HR",
         subtitle: "Join us in a discussion on how AI is revolutionizing recruitment in human resources",
-        ongoing: true
+        ongoing: false
     },
     {
         url: "/events/foodtech",
