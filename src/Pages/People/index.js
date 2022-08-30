@@ -74,7 +74,6 @@ export default function People() {
                 <h1 className="meet-our-team">MEET OUR TEAM</h1>
             </Slide>
             <Container>
-                {/* TODO: Add current committee here. */}
                 <Slide left>
                     <p className="executive-committee">Third Executive Committee (Academic Year 2022-2023)</p>
                 </Slide>
