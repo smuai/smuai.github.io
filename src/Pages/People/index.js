@@ -4,6 +4,7 @@ import Slide from "react-reveal/Slide";
 import Fade from "react-reveal/Fade";
 import bio1 from '../../Data/exco1'
 import bio2 from '../../Data/exco2'
+import bio3 from '../../Data/exco3'
 import Member from '../../Components/Member'
 import './styles.css'
 
@@ -73,7 +74,25 @@ export default function People() {
                 <h1 className="meet-our-team">MEET OUR TEAM</h1>
             </Slide>
             <Container>
-                 <Slide left>
+                {/* TODO: Add current committee here. */}
+                <Slide left>
+                    <p className="executive-committee">Third Executive Committee (Academic Year 2022-2023)</p>
+                </Slide>
+                <div className="container">
+                    <div class="row justify-content-center">
+                        {bio3.map(profile => {
+                            return (
+                                <div className="col-sm exco-profile">
+                                    <Fade bottom>
+                                        <Member member={profile} />
+                                    </Fade>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
+
+                <Slide left>
                     <p className="executive-committee">Second Executive Committee (Academic Year 2020-2021)</p>
                 </Slide>
                 <div className="container">
