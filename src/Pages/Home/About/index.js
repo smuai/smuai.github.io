@@ -32,6 +32,9 @@ export default function About() {
                 <div className="ourmission">
                     <Fade bottom>
                         <p className="mission">To cultivate and spread ideas about Artificial Intelligence.</p>
+                        <p className="mission"> As of 2022, SMUAI's 4th EXCO has pioneered a competitive hackathons team to represent SMU's SCIS student body. 
+                            Our strong team of diverse individuals (SMU Avenirs) will actively compete in Hackathons throughout the year with support from programmes curated by our committee.
+                            Along with previous initiatives, our members are now eligible to take industry certificate Google ML Engineer Certificate as part of AISG's SUG programme.</p>
                         {/* <img className="photoshoot2" src={photoshoot} alt="SmuAI team 2" /> */}
                         <br/>
                     </Fade>

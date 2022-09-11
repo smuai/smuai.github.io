@@ -28,7 +28,7 @@ export default [
         name: "Yin Qiuhao\n(Ben)",
         img: require("../Images/BenYinQiuHao.jpeg"),
         position: "Programmes Lead",
-        linkedIn: "",
+        linkedIn: "https://www.linkedin.com/in/qiuhaoyin74b999198",
     },
     {
         name: "Lau Li Qing",
