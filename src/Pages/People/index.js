@@ -90,23 +90,6 @@ export default function People() {
                         })}
                     </div>
                 </div>
-
-                <Slide left>
-                    <p className="executive-committee">Second Executive Committee (Academic Year 2020-2021)</p>
-                </Slide>
-                <div className="container">
-                    <div class="row justify-content-center">
-                        {bio2.map(profile => {
-                            return (
-                                <div className="col-sm exco-profile">
-                                    <Fade bottom>
-                                        <Member member={profile} />
-                                    </Fade>
-                                </div>
-                            );
-                        })}
-                    </div>
-                </div>
                 
                 <Slide left>
                     <p className="executive-committee">Advisors</p>
@@ -140,6 +123,23 @@ export default function People() {
                 <div className="container">
                     <div class="row justify-content-center">
                         {bio1.map(profile => {
+                            return (
+                                <div className="col-sm exco-profile">
+                                    <Fade bottom>
+                                        <Member member={profile} />
+                                    </Fade>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
+
+                <Slide left>
+                    <p className="executive-committee">Second Executive Committee (Academic Year 2020-2021)</p>
+                </Slide>
+                <div className="container">
+                    <div class="row justify-content-center">
+                        {bio2.map(profile => {
                             return (
                                 <div className="col-sm exco-profile">
                                     <Fade bottom>
